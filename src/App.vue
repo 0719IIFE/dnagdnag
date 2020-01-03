@@ -1,28 +1,23 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App from lx updated"/>
+  <div id = "app">
+    <router-view/>
+    <FooterGuide v-show="$route.meta.isShowFooter"/>
   </div>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import FooterGuide from './components/FooterGuide/FooterGuide'
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
+  components:{
+    FooterGuide
+  },
+  async mounted () {
+      // 通知action异步获取address并保存到state
+      this.$store.dispatch('autoLogin')
+    },
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang='stylus'>
+  #app  
+    width 100%
+    height 100%
 </style>
