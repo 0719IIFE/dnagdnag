@@ -137,45 +137,53 @@
                 "img_url":"http://img54.ddimg.cn/178320093983394_y.jpg"
             }
         ]
-	},
-	"swiper_url": [
-		"http://img61.ddimg.cn/upload_img/00803/1/1242x366-1576831048.jpg",
-		"http://img60.ddimg.cn/upload_img/00738/123/1242x366-2-1577782005.jpg",
-		"http://img63.ddimg.cn/ddreader/dangebook/20201ynew_1242x366.jpg",
-		"http://img61.ddimg.cn/upload_img/00803/1/1242x366-1577771818.jpg",
-		"http://img60.ddimg.cn/upload_img/00690/1/xiao-1577776407.jpg",
-		"http://img62.ddimg.cn/upload_img/00785/xssd202001/1242x366-1577782394.jpg",
-		"http://img59.ddimg.cn/42360140500969_y.jpg",
-		"http://img54.ddimg.cn/220150084181734_y.jpg"
-	],
-	"swiper_list": [
-		"http://img62.ddimg.cn/upload_img/00803/1/changxiao-1562827738.png",
-		"http://img60.ddimg.cn/upload_img/00803/1/xinshubang2-1562825207.png",
-		"http://img62.ddimg.cn/upload_img/00702/B/SY-iCON-3-5.10-1557488951.png",
-		"http://img63.ddimg.cn/upload_img/00702/B/icon-jrcx-1559563476.png",
-		"http://img62.ddimg.cn/upload_img/00705/B/icon-5.28-1559032809.png",
-		"http://img50.ddimg.cn/116550067538580_y.jpg",
-		"http://img63.ddimg.cn/upload_img/00528/000/7chaoshi-1545121233.png",
-		"http://img61.ddimg.cn/upload_img/00528/000/00000-1564393723.png",
-		"http://img62.ddimg.cn/upload_img/00528/000/9zhongxin-1545121233.png",
-		"http://img63.ddimg.cn/upload_img/00528/0000/12311-1556245256.jpg"
-	],
-	"title": [
-		"http://img62.ddimg.cn/upload_img/00707/mobile/mao_title.jpg",
-		"http://img61.ddimg.cn/upload_img/00705/yhj/tslc-bt.jpg",
-		"http://img61.ddimg.cn/upload_img/00757/shuang11/biaoti-1540452487.jpg",
-		"http://img50.ddimg.cn/178320095007290_y.jpg"
-	],
-	"hujiang_url": [
-		"http://img51.ddimg.cn/222060123100431_y.jpg"
-	],
-	"bookCity_url": [
-		"http://img62.ddimg.cn/upload_img/00796/1/1242x332-1577761324.jpg"
-	],
-	"clothing_url": [
-		"http://img62.ddimg.cn/upload_img/00757/LOGO/loucengbanner-1565921661.jpg"
-	],
-	"focusBenefit_url": [
-		"http://img50.ddimg.cn/14540066006690_y.jpg"
-	]
+    },
+    "swiper_url":[
+        "http://img61.ddimg.cn/upload_img/00803/1/1242x366-1576831048.jpg",
+        "http://img60.ddimg.cn/upload_img/00738/123/1242x366-2-1577782005.jpg",
+        "http://img63.ddimg.cn/ddreader/dangebook/20201ynew_1242x366.jpg",
+        "http://img61.ddimg.cn/upload_img/00803/1/1242x366-1577771818.jpg",
+        "http://img60.ddimg.cn/upload_img/00690/1/xiao-1577776407.jpg",
+        "http://img62.ddimg.cn/upload_img/00785/xssd202001/1242x366-1577782394.jpg",
+        "http://img59.ddimg.cn/42360140500969_y.jpg",
+        "http://img54.ddimg.cn/220150084181734_y.jpg"
+    ],
+    "swiper_list":[
+        "http://img62.ddimg.cn/upload_img/00803/1/changxiao-1562827738.png",
+        "http://img60.ddimg.cn/upload_img/00803/1/xinshubang2-1562825207.png",
+        "http://img62.ddimg.cn/upload_img/00702/B/SY-iCON-3-5.10-1557488951.png",
+        "http://img63.ddimg.cn/upload_img/00702/B/icon-jrcx-1559563476.png",
+        "http://img62.ddimg.cn/upload_img/00705/B/icon-5.28-1559032809.png",
+        "http://img50.ddimg.cn/116550067538580_y.jpg",
+        "http://img63.ddimg.cn/upload_img/00528/000/7chaoshi-1545121233.png",
+        "http://img61.ddimg.cn/upload_img/00528/000/00000-1564393723.png",
+        "http://img62.ddimg.cn/upload_img/00528/000/9zhongxin-1545121233.png",
+        "http://img63.ddimg.cn/upload_img/00528/0000/12311-1556245256.jpg"
+    ],
+    "title":{
+       "secKilled": [
+        "http://img62.ddimg.cn/upload_img/00707/mobile/mao_title.jpg"
+       ],
+       "bookCity":[
+        "http://img61.ddimg.cn/upload_img/00705/yhj/tslc-bt.jpg"
+       ],
+       "clothing":[
+        "http://img61.ddimg.cn/upload_img/00757/shuang11/biaoti-1540452487.jpg"
+       ],
+       "focus":[
+        "http://img50.ddimg.cn/178320095007290_y.jpg"
+       ]
+    },
+    "hujiang_url":[
+        "http://img51.ddimg.cn/222060123100431_y.jpg"
+    ],
+    "bookCity_url":[
+        "http://img62.ddimg.cn/upload_img/00796/1/1242x332-1577761324.jpg"
+    ],
+    "clothing_url":[
+        "http://img62.ddimg.cn/upload_img/00757/LOGO/loucengbanner-1565921661.jpg"
+    ],
+    "focusBenefit_url":[
+        "http://img50.ddimg.cn/14540066006690_y.jpg"
+    ]
 }
