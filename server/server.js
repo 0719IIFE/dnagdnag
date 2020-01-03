@@ -53,12 +53,5 @@ mongoose.connect('mongodb://localhost/users', {useNewUrlParser: true})
     })
     .catch(error => {
         console.error('连接数据库失败', error)
-<<<<<<< HEAD
-    }) */
-    app.listen('4000', () => {
-        console.log('服务器启动成功, 请访问: http://localhost:4000')
-    })
-=======
-    })
-    
->>>>>>> 3cc8a43b1217fce4f2b9b8cb5e13225659fdb5bf
+    }) 
+

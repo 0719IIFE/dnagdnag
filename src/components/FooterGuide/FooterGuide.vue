@@ -18,7 +18,7 @@
       </span>
       <span>值得买</span>
     </span>
-    <span class="guide_item" @click="goto('/shopcart')">
+    <span class="guide_item" @click="goto('/cart')">
       <span class="item_icon">
         <i class="iconfont icon-gouwuche2"></i>
       </span>
