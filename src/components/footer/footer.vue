@@ -45,9 +45,9 @@ import {mapState} from 'vuex'
   //     mounted() {
   //   this.$toast('添加购物车成功');
   // },
+  props:['countI'],
     computed: {
       ...mapState(["count"]),
-      ...mapState(["countI"]),
     },
     methods: {
       // onClickIcon() {
