@@ -42,7 +42,7 @@
         </div>
       </section>
       <section class="myslide" tag="div">
-          <router-link to="/">
+          <router-link to="/login">
             <div class="left">
               <i class="iconfont icon-wodedingdan" style="color:#FB8F63"></i>
               <span>我的订单</span>
@@ -81,7 +81,7 @@
       </section>
       <div class="space"></div>
       <section class="myList" tag="div" v-for="(item, index) in itemDatas.personalList.ItemList" :key="index">
-          <router-link to="/">
+          <router-link to="/mylist">
             <div class="left">
               <i :class="item.iconClass" :style="item.color"></i>
               <span>{{item.text}}</span>
@@ -93,7 +93,7 @@
       </section>
       <div class="space"></div>
       <section class="myList" tag="div" v-for="(item, index) in itemDatas.personalList.discounts" :key="'myList'+index">
-          <router-link to="/">
+          <router-link to="/mylist">
             <div class="left">
               <i :class="item.iconClass" style="color:red"></i>
               <span>{{item.text}}</span>
@@ -105,7 +105,7 @@
       </section>
       <div class="space"></div>
       <section class="myList" tag="div">
-          <router-link to="/">
+          <router-link to="/mylist">
             <div class="left">
               <i class="iconfont icon-qiang" style="color:#C2CB5A"></i>
               <span>客服反馈</span>
