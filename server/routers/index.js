@@ -232,7 +232,7 @@ router.get("/teJiShuShi",function (req,res){
 })
 
 //deserveShop
-router.get("/zhiDeMai",function (req,res){
+router.get("/DeserveBuying",function (req,res){
     res.send(zhiDeMai)
 })
 
