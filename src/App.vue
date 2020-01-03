@@ -9,7 +9,11 @@ import FooterGuide from './components/FooterGuide/FooterGuide'
 export default {
   components:{
     FooterGuide
-  }
+  },
+  async mounted () {
+      // 通知action异步获取address并保存到state
+      this.$store.dispatch('autoLogin')
+    },
 }
 </script>
 <style lang='stylus'>
