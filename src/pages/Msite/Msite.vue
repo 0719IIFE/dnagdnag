@@ -461,16 +461,11 @@ export default {
       })
     },
     methods:{
-<<<<<<< HEAD
       handleClick(index){
         //判断index的值
         if(index == 5){
           this.$router.push('/clothing')
         }
-=======
-      isClose(){
-        this.$refs.beClosedAdver.remove()
->>>>>>> 07d1b1e9b5ef052d4ed7fe3203a464021efb20c3
       }
     }
 }
