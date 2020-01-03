@@ -11,7 +11,7 @@ import Cart from '@/pages/cart/cart'
 import Detail from '@/pages/detail/detail'
 import Recommend from '@/pages/recommend/recommend'
 import Clothing from '../components/Clothing/Clothing.vue'
-
+import Comment from '../pages/comment/comment.vue'
 
 export default [
     {

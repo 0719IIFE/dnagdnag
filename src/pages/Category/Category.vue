@@ -403,7 +403,7 @@ export default {
             text-align center
             line-height 47px
     .wrapper 
-      height 620px
+      height 575px
       overflow hidden
       .rightNav 
         float left
@@ -490,7 +490,7 @@ export default {
               color #8e8e8e 
           .fictionUpContent 
             width 286px
-            min-height 98px
+            min-height 49px
             .upList 
               // height 98px
               overflow hidden

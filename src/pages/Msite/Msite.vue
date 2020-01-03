@@ -466,6 +466,10 @@ export default {
         if(index == 5){
           this.$router.push('/clothing')
         }
+        
+      },
+      isClose(){
+          this.$refs.beClosedAdver.remove()
       }
     }
 }
