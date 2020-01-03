@@ -1,22 +1,67 @@
 <template>
-  <div id="categoryContainer" v-if="allCategoryObj">
+  <div id="categoryContainer">
     <!-- 头部 -->
     <header>
+
+      <!-- 返回按钮 -->
       <span @click="goto('/msite')">
         <i class="iconfont icon-back"></i>
       </span>
+
+      <!-- 搜索框 -->
       <div class="search">
+        <!-- 搜索图标 -->
         <span> 
           <i class="iconfont icon-sousuo"></i>
         </span>
-        <input type="text" placeholder="搜索商品/种类/店铺" @focus="handleSearch()"/>
+        <!-- 搜索框 -->
+        <input type="text" placeholder="搜索商品/种类/店铺" @focus="handleSearch"/>
       </div>
-      <span class="sandian">
+
+      <!-- 右侧文字 动态切换 -->
+      <span v-if="isSearch">搜索</span>
+      <span class="sandian" @click="handleGuide" v-if="!isSearch && !showGuide">
         <i class="iconfont icon-sandian"></i>
       </span>
+      <span v-if="showGuide" @click="handleGuide"><i class="iconfont icon-ziyuan1"></i></span>
+
+      <!-- 点击三点,显示导航 -->
+      <div class="footer_guide" v-if="showGuide">
+        <span class="guide_item" :class="{on: '/msite'===$route.path}" @click="goto('/msite')">
+          <span>
+            <i class="iconfont icon-xuanzhongshangcheng"></i>
+          </span>
+          <span>首页</span>
+        </span>
+        <span class="guide_item" @click="goto('/category')">
+          <span>
+            <i class="iconfont icon-mulu"></i>
+          </span>
+          <span>分类</span>
+        </span>
+        <span class="guide_item" :class="{on: '/deserveBuying'===$route.path}" @click="goto('/deserveBuying')">
+          <span>
+            <i class="iconfont icon-bao"></i>
+          </span>
+          <span>值得买</span>
+        </span>
+        <span class="guide_item" @click="goto('/shopcart')">
+          <span class="item_icon">
+            <i class="iconfont icon-gouwuche2"></i>
+          </span>
+          <span>购物车</span>
+        </span>
+        <span class="guide_item" @click="goto('/profile')" :class="{on: '/profile'===$route.path}">
+          <span class="item_icon">
+            <i class="iconfont icon-person"></i>
+          </span>
+          <span>我的当当</span>
+        </span>
+      </div>
     </header>
+
     <!-- 内容区,动态显示 -->
-    <div class="navContainer">
+    <div class="navContainer" v-if="!isSearch && allCategoryObj" :class="{searchDown:showGuide}">
       <!-- 左侧导航列表 -->
       <div class="wrapper wrapperLeft" ref="left">
         <ul class="allCategoryObj" ref="leftUl">
@@ -117,6 +162,29 @@
         </div>
       </div>
     </div>
+    
+    <!-- 搜索区展示 -->
+    <div class="mask" v-if="isSearch">
+      <!-- 搜索展示的头部 -->
+      <header>
+        <span>
+          <i class="iconfont icon-remensousuo"></i>
+        </span>
+        <span class="title">热门搜索</span>
+      </header>
+      <!-- 搜索展示的内容区 -->
+      <section>
+        <span>安奈儿</span>
+        <span>网易严选</span>
+        <span>呼吸</span>
+        <span>秋水伊人</span>
+        <span>数学帮帮忙</span>
+        <span>数学帮帮忙</span>
+      </section>
+      <!-- 空白区域 -->
+      <!-- <div class="blank"></div> -->
+    </div>
+    
   </div>
 </template>
 
@@ -135,6 +203,7 @@ export default {
       styleType: "",
       showList: false,
       isSearch:false,
+      showGuide:false
     }
   },
 
@@ -181,6 +250,12 @@ export default {
       return (this.currentIndex = index)
     },
     goto (path) {
+      //判断输入框是否为获取焦点状态
+      if(this.isSearch){
+        //将isSearch修改为false
+        this.isSearch = false
+        return
+      }
       if (this.$route.path!==path) {
           this.$router.replace(path)
       } else { // 如果请求的时当前的, 直接强制刷新
@@ -188,7 +263,12 @@ export default {
       }
     },
     handleSearch () {
-
+      //修改展示导航的状态
+      this.showGuide = false
+      this.isSearch = true
+    },
+    handleGuide () {
+      this.showGuide = !this.showGuide
     }
   },
 
@@ -216,20 +296,26 @@ export default {
     height 45px
     display flex
     line-height 45px
+    position relative
     span 
+      font-size 14px
+      margin-left 5px
       .iconfont 
         width 36px
         height 30px
         font-size 20px
         padding 0 10px
+      .icon-ziyuan1
+        font-size 16px
+        color red
     .search 
-      width 80%
+      width 280px
       height 30px
       line-height 30px
       margin-top 7px
       border-radius 30px
       overflow hidden
-      background-color #e8ecf0
+      background-color #eee
       position relative
       span 
         position absolute
@@ -239,16 +325,46 @@ export default {
           font-size 12px
       input 
         width 245px
+        height 100%
         margin-left 30px
         background-color #e8ecf0
         outline none
         font-size 14px
         padding-left 5px
+    .footer_guide
+      border-top 1px solid #eee
+      z-index -1
+      display flex
+      position absolute
+      top 45px
+      left 0
+      width 100%
+      height 50px
+      padding 6px 0
+      box-sizing border-box
+      background-color #eee
+      .guide_item
+        display flex
+        flex-direction column
+        text-align center
+        width 20%
+        height 50px
+        margin-top 10px
+        &.on
+          color red
+        span
+          margin-top -25px
+          font-size 12px
+          .iconfont
+            font-size 18px
 
+  .searchDown
+    margin-top 50px
+    transition all 0.5s
   .navContainer 
     background-color #eff4fa
     border-top 1px solid #eee
-
+    transition all 0.5s
     .bookTitle 
       padding 7px 0 0 14px
       font-size 13px
@@ -419,4 +535,33 @@ export default {
               padding-left 10px
               color #4d525d
               border-bottom 1px solid #eee
+  .mask 
+    background-color #eee
+    overflow hidden
+    header 
+      width 80%
+      height 40px
+      color #646464
+      font-size 14px
+      line-height 40px
+      .iconfont  
+        font-size 16px
+      .title
+        margin-left -8px
+    section
+      span 
+        display block
+        float left
+        min-width 50px
+        height 33px
+        background-color #fff
+        border-radius 5px
+        line-height 33px
+        font-size 12px
+        text-align center
+        margin-left 10px
+        margin-bottom 10px
+        padding 0 10px
+      
+
 </style>
