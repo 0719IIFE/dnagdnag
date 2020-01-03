@@ -9,7 +9,7 @@
         <span> 
           <i class="iconfont icon-sousuo"></i>
         </span>
-        <input type="text" placeholder="搜索商品/种类/店铺"/>
+        <input type="text" placeholder="搜索商品/种类/店铺" @focus="handleSearch()"/>
       </div>
       <span class="sandian">
         <i class="iconfont icon-sandian"></i>
@@ -186,6 +186,9 @@ export default {
       } else { // 如果请求的时当前的, 直接强制刷新
           window.location.reload()
       }
+    },
+    handleSearch () {
+
     }
   },
 
