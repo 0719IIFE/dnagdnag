@@ -106,7 +106,7 @@
 <script>
     import BScroll from "better-scroll"
     import PageHeader from "../../components/pagesHeader/pagesHeader"
-    import {reqZhiDeMai} from "../../api"
+    import {DeserveBuying} from "../../api"
 
     export default {
         data() {
@@ -115,7 +115,7 @@
             }
         },
         async mounted() {
-            const result = await reqZhiDeMai()
+            const result = await DeserveBuying()
             if (result.code === 0) {
                 this.data = result.data
                 console.log(this.data);

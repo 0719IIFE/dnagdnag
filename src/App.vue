@@ -1,23 +1,17 @@
 <template>
-    <div>
-        <JinRiChuXiao/>
-    </div>
+  <div id = "app">
+    <router-view/>
+    <FooterGuide v-show="$route.meta.isShowFooter"/>
+  </div>
 </template>
-
 <script>
-    import ZhiDeMai from "./pages/zhiDeMai/zhiDeMai"
-    import TeJiaShuShi from "./pages/teJiaShuShi/teJiaShuShi"
-    import JinRiChuXiao from "./pages/jinRiCuXiao/jinRiCuXiao"
-    export default {
-        components:{
-            JinRiChuXiao
-        }
-    }
+import FooterGuide from './components/FooterGuide/FooterGuide'
+export default {
+  components:{
+    FooterGuide
+  }
+}
 </script>
+<style lang='stylus'>
 
-<style lang="stylus" rel="stylesheet/stylus">
-    body
-        background-color #f5f5f5
-        height 100%
 </style>
-

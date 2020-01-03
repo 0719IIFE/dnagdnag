@@ -82,11 +82,11 @@
         data(){
             return {
                 isDown:false,
-                isShow:false,
-                current:0,
-                data:"",
-                leftArr:[],
-                topArr:[]
+                    isShow:false,
+                    current:0,
+                    data:"",
+                    leftArr:[],
+                    topArr:[]
             }
         },
         methods:{
@@ -122,6 +122,7 @@
             })
 
             const result = await reqJinRiCuXiao()
+
             if(result.code === 0){
                 this.data = result.data
             }
@@ -141,7 +142,6 @@
                         this.topArr.push(div.offsetTop)
                     }
                 })
-                console.log(this.topArr);
                 this.navLeft = new BScroll('.navLeft',{
                     scrollX: true,
                     click: true
