@@ -168,7 +168,7 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus" scoped>
-  @import "../../common/stylus/mixins.styl"
+  @import "../../commen/stylus/mixins.styl"
   .profile //我的
     width 100%
     .header //头部公共css

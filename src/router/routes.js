@@ -4,7 +4,7 @@ import Category from '../pages/Category/Category.vue'
 import DeserveBuying from '../pages/DeserveBuying/DeserveBuying.vue'
 import ShopCart from '../pages/ShopCart/ShopCart.vue'
 import Login from '@/pages/Login/Login'
-import Personal from '@/pages/Personal/Personal'
+import Profile from '@/pages/Profile/Profile'
 
 
 export default [
@@ -34,8 +34,8 @@ export default [
         component:ShopCart
     },
     {
-        path:'/personal',
-        component:Personal,
+        path:'/profile',
+        component:Profile,
         meta:{
             isShowFooter:true
         }
