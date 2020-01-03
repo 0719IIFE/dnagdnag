@@ -38,6 +38,7 @@ export const reqAutoLogin = () => ajax.get('/auto_login')
 export const getDetail=()=>ajax.get("/detail")
 
 
+
 //异步获取服装馆数据
 export const reqClothing = () => ajax.get("/clothing")
 
