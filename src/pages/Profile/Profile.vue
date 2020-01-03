@@ -148,9 +148,7 @@
       this.itemDatas = Datas
     },
     computed: {
-      ...mapState({
-        user: state => state.user.user
-      })
+      ...mapState(['user'])
     },
     methods: {
       logout () {
