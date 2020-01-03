@@ -10,7 +10,7 @@
       </div>
       <div class="left">
         <img src="http://img62.ddimg.cn/upload_img/00742/123/youbian-1541766952.png" alt="">
-      </div>  
+      </div>
     </div>
     <!-- 特价以上 -->
     <div class="first">
@@ -43,15 +43,15 @@
       </div>
       <!-- 十个商品列表 -->
       <ul class="shopList">
-        <li class="shopItem" 
-          @click="$router.push(p.path)" 
-          v-for="(p,index) in picture.swiper_list" 
+        <li class="shopItem"
+          @click="$router.push(p.path)"
+          v-for="(p,index) in picture.swiper_list"
           :key = 'index'>
             <a :href="p.path ? '' : p.linkUrl">
               <img :src="p.imgUrl" alt="">
             </a>
         </li>
-      </div>    
+      </ul>
     </div>
     <!-- 隐藏部分 -->
     <div class = 'componentToSeacher' v-show = 'sectionSearch'>
@@ -74,22 +74,6 @@
         <li class="hotItemWord">只有医生知道</li>
       </ul>
     </div>
-    <!-- 轮播-->
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide" v-for="(pic,index) in picture.swiper_url" :key= 'index'>
-              <img :src="pic" alt="">
-            </div>
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-    </div>
-    <!-- 十个商品列表 -->
-    <ul class="shopList">
-      <li class="shopItem" @click="handleClick(index)" v-for="(p,index) in picture.swiper_list" :key = 'index'>
-        <img :src="p" alt="">
-      </li>
-    </ul>
     <!-- 中间的1px的分割线 -->
     <div class="border"></div>
     <!-- 下面的今日秒杀 -->
@@ -112,7 +96,7 @@
                   <span class="text">秒</span>
                 </template>
               </van-count-down>
-            </span> 
+            </span>
           </span>
         </span>
         <!-- 秒杀列表 -->
@@ -444,10 +428,10 @@
       <span>告</span>
       <span>x</span>
     </div>
-<!-- 红包雨 -->    
+<!-- 红包雨 -->
     <div class="redBagRain"  v-for = '(rb,index) in redBagRain.data.hongbaoyu.activity_list' :key = 'index' @click = "$router.push('/red_bag_rain')">
       <img :src="rb.icon_h5" alt=""/>
-    </div>   
+    </div>
     <a href = "#top" class="switchTop">
       <img src="http://touch.m.dangdang.com/images/go-top.png" alt=""/>
     </a>
@@ -505,13 +489,13 @@ export default {
         //判断index的值
         if(index == 5){
           this.$router.push('/clothing')
-        } 
+        }
       },
       isClose(){
           this.$refs.beClosedAdver.remove()
       },
       isShowSearch(){
-        this.sectionSearch = !this.sectionSearch 
+        this.sectionSearch = !this.sectionSearch
       }
     }
 }
@@ -532,14 +516,14 @@ export default {
       height 100%
       img
         width 100%
-        height 100% 
-    .right 
+        height 100%
+    .right
       width 50%
-      height 100% 
+      height 100%
       img
         width 100%
-        height 100%  
-    .close 
+        height 100%
+    .close
       width 25px
       height 25px
       position absolute
@@ -547,7 +531,7 @@ export default {
       right 11px
       img
         width 100%
-        height 100% 
+        height 100%
   .header
     width 100%
     height 44px
@@ -658,12 +642,12 @@ export default {
           padding-top 3px
           box-sizing border-box
           .time
-            display inline-block 
+            display inline-block
             width 100%
             height 25px
             text-align center
             line-height 25px
-            .item 
+            .item
               display inline-block
               width 19px
               height 21px
@@ -674,7 +658,7 @@ export default {
               background-color #323232
               border-radius 5px
             .red
-              background-color red  
+              background-color red
             .text
               display inline-block
               text-align center
@@ -1393,7 +1377,7 @@ export default {
     position fixed
     right 12px
     bottom 50px
-    img 
+    img
       width 100%
       height 100%
 </style>
