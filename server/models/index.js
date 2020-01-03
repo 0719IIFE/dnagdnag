@@ -8,7 +8,7 @@ var userSchema = new Schema({
     pwd:{
         type:String
     },
-    phonr:{
+    phone:{
         type:Number
     },
     date:{
