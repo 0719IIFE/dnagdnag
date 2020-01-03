@@ -1,18 +1,18 @@
 <template>
   <div id = 'firstView' v-if="picture && redBagRain">
-<!-- 点击关闭的广告 -->
-  <div class="clickAdver" ref = 'beClosedAdver'>
-    <div class="close" @click = 'isClose'>
-      <img src="http://touch.m.dangdang.com/images/close-app-download.png" alt="">
+    <!-- 点击关闭的广告 -->
+    <div class="clickAdver" ref = 'beClosedAdver'>
+      <div class="close" @click = 'isClose'>
+        <img src="http://touch.m.dangdang.com/images/close-app-download.png" alt="">
+      </div>
+      <div class="left">
+        <img src="http://img61.ddimg.cn/upload_img/00742/123/zuobian-1541766933.png" alt="">
+      </div>
+      <div class="left">
+        <img src="http://img62.ddimg.cn/upload_img/00742/123/youbian-1541766952.png" alt="">
+      </div>  
     </div>
-    <div class="left">
-      <img src="http://img61.ddimg.cn/upload_img/00742/123/zuobian-1541766933.png" alt="">
-    </div>
-    <div class="left">
-      <img src="http://img62.ddimg.cn/upload_img/00742/123/youbian-1541766952.png" alt="">
-    </div>  
-  </div>
-<!-- 特价以上 -->
+    <!-- 特价以上 -->
     <div class="first">
         <!-- 头部的输入框+logo -->
       <div class = 'header'>
@@ -24,7 +24,7 @@
             <div class = 'searchIcon'>
               <i class = 'iconfont icon-search'></i>
             </div>
-            <input class = 'searchContent' type = 'text' placeholder = '米小圈'/>
+            <input class = 'searchContent' v-on:focus = 'isShowSearch' type = 'text' placeholder = '米小圈'/>
           </div>
         </div>
         <div class = 'iconMenu' @click = "$router.push('/category')">
@@ -51,108 +51,145 @@
               <img :src="p.imgUrl" alt="">
             </a>
         </li>
+      </div>    
+    </div>
+    <!-- 隐藏部分 -->
+    <div class = 'componentToSeacher' v-show = 'sectionSearch'>
+      <p class= 'hotSearch'>
+        <i class = 'iconfont icon-remensousuo'></i>
+        <span>热门搜索</span>
+      </p>
+      <ul class = 'hotWord'>
+        <li class="hotItemWord">安奈儿</li>
+        <li class="hotItemWord">网易严选</li>
+        <li class="hotItemWord">呼吸</li>
+        <li class="hotItemWord">秋水伊人</li>
+        <li class="hotItemWord">数学帮帮忙</li>
+        <li class="hotItemWord">数学帮帮忙</li>
+        <li class="hotItemWord">红楼梦</li>
+        <li class="hotItemWord">变量2</li>
+        <li class="hotItemWord">盗墓笔记全套全集</li>
+        <li class="hotItemWord">七田真</li>
+        <li class="hotItemWord">蚂蚁和西瓜</li>
+        <li class="hotItemWord">只有医生知道</li>
       </ul>
-      <!-- 中间的1px的分割线 -->
-      <div class="border"></div>
-<!-- 下面的今日秒杀 -->
-      <div class="discount">
-        <div class="dsTitle" v-for="(p,index) in picture.title.secKilled" :key = 'index'>
-          <img class = 'dsPic' :src="p" alt="">
+    </div>
+    <!-- 轮播-->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" v-for="(pic,index) in picture.swiper_url" :key= 'index'>
+              <img :src="pic" alt="">
+            </div>
         </div>
-        <div class="dsContent">
-          <!-- 秒杀时间 -->
-         <span class="seckillingTime">
-            <span class = 'seckillingContent'>
-              <span class="time">
-                 <van-count-down :time="time">
-                  <template v-slot="timeData">
-                    <span class="item">{{ timeData.hours }}</span>
-                    <span class="text">时</span>
-                    <span class="item">{{ timeData.minutes }}</span>
-                    <span class="text">分</span>
-                    <span class="item red">{{ timeData.seconds }}</span>
-                    <span class="text">秒</span>
-                  </template>
-                </van-count-down>
-              </span> 
-            </span>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- 十个商品列表 -->
+    <ul class="shopList">
+      <li class="shopItem" @click="handleClick(index)" v-for="(p,index) in picture.swiper_list" :key = 'index'>
+        <img :src="p" alt="">
+      </li>
+    </ul>
+    <!-- 中间的1px的分割线 -->
+    <div class="border"></div>
+    <!-- 下面的今日秒杀 -->
+    <div class="discount">
+      <div class="dsTitle" v-for="(p,index) in picture.title.secKilled" :key = 'index'>
+        <img class = 'dsPic' :src="p" alt="">
+      </div>
+      <div class="dsContent">
+        <!-- 秒杀时间 -->
+        <span class="seckillingTime">
+          <span class = 'seckillingContent'>
+            <span class="time">
+                <van-count-down :time="time">
+                <template v-slot="timeData">
+                  <span class="item">{{ timeData.hours }}</span>
+                  <span class="text">时</span>
+                  <span class="item">{{ timeData.minutes }}</span>
+                  <span class="text">分</span>
+                  <span class="item red">{{ timeData.seconds }}</span>
+                  <span class="text">秒</span>
+                </template>
+              </van-count-down>
+            </span> 
           </span>
-          <!-- 秒杀列表 -->
-          <div class="wrapper">
-            <ul class="content" >
-              <li class="goodsDsItem" v-for="(item,index) in seckilledList" :key = 'index'>
-                <img :src="item.img_url" alt="">
-                <p class="goodsDesc">{{item.product_name}}</p>
-                <div class = 'price'>
-                  <p class="currentPrice">￥{{item.directPrice}}</p>
-                  <p class="oldPrice">￥{{item.origin_price}}</p>
-                </div>
-              </li>
-              <li class = 'goodsDsItem'>
-                <img src="http://img60.ddimg.cn/upload_img/00610/new_index/more.png" alt="">
-              </li>
-            </ul>
-            <div class = 'empty'></div>
-          </div>
-        </div>
-      </div>
-<!-- 沪江网校 -->
-      <div class="interSchool" v-for="(p,index) in picture.hujiang_url" :key = 'index'>
-        <img class='bigPicture' :src="p" alt="">
-      </div>
-      <div class="empty"></div>
-
-<!-- 全球最大的书城 -->
-      <div class="bookCity">
-    <!-- 上面文字部分 -->
-        <div class="headerDesc">
-          <div class="titleTop" v-for="(p,index) in picture.title.bookCity" :key = 'index'>
-            <img :src="p" alt="">
-          </div>
-          <ul class="titleList">
-            <li class="titleItem">
-              <p class="text">当当书城</p>
-              <i class="iconfont icon-youcejiantou"></i>
+        </span>
+        <!-- 秒杀列表 -->
+        <div class="wrapper">
+          <ul class="content" >
+            <li class="goodsDsItem" v-for="(item,index) in seckilledList" :key = 'index'>
+              <img :src="item.img_url" alt="">
+              <p class="goodsDesc">{{item.product_name}}</p>
+              <div class = 'price'>
+                <p class="currentPrice">￥{{item.directPrice}}</p>
+                <p class="oldPrice">￥{{item.origin_price}}</p>
+              </div>
             </li>
-            <li class="titleItem">
-              <p class="text">电子书</p>
-              <i class="iconfont icon-youcejiantou"></i>
-            </li>
-            <li class="titleItem">
-              <p class="text">网络文学</p>
-              <i class="iconfont icon-youcejiantou"></i>
+            <li class = 'goodsDsItem'>
+              <img src="http://img60.ddimg.cn/upload_img/00610/new_index/more.png" alt="">
             </li>
           </ul>
+          <div class = 'empty'></div>
         </div>
-    <!-- 中间的1px的边框  -->
-        <div class="border"></div>
-    <!-- 下面的图片主体部分 -->
-        <div class="bigPic" v-for="(p,index) in picture.bookCity_url" :key = 'index'>
-          <img class = 'bigPicture' :src="p" alt="">
-        </div>
-    <!-- 中间的1px的边框  -->
-        <div class="border"></div>
-    <!-- 图书列表 -->
-      <!-- 第一层 -->
-        <div class="bookTitleList">
-          <ul class="bookList">
-            <li class="bookItem" v-for="(p,index) in picture.firstFloor" :key = 'index'>
-              <span class="desc">
-                <p class = 'blackDesc'>{{p.name}}</p>
-                <p class = 'redDesc'>{{p.desc}}</p>
-              </span>
-              <span class = 'bookPic'>
-                <img :src="p.img_url" alt="">
-              </span>
-            </li>
-          </ul>
-        </div>
-        <div class="empty"></div>
       </div>
     </div>
-<!-- 服装鞋包 -->
-    <div class="clothesAndBag">
+    <!-- 沪江网校 -->
+    <div class="interSchool" v-for="(p,index) in picture.hujiang_url" :key = 'index'>
+      <img class='bigPicture' :src="p" alt="">
+    </div>
+    <div class="empty"></div>
+
+    <!-- 全球最大的书城 -->
+    <div class="bookCity">
       <!-- 上面文字部分 -->
+      <div class="headerDesc">
+        <div class="titleTop" v-for="(p,index) in picture.title.bookCity" :key = 'index'>
+          <img :src="p" alt="">
+        </div>
+        <ul class="titleList">
+          <li class="titleItem">
+            <p class="text">当当书城</p>
+            <i class="iconfont icon-youcejiantou"></i>
+          </li>
+          <li class="titleItem">
+            <p class="text">电子书</p>
+            <i class="iconfont icon-youcejiantou"></i>
+          </li>
+          <li class="titleItem">
+            <p class="text">网络文学</p>
+            <i class="iconfont icon-youcejiantou"></i>
+          </li>
+        </ul>
+      </div>
+      <!-- 中间的1px的边框  -->
+      <div class="border"></div>
+      <!-- 下面的图片主体部分 -->
+      <div class="bigPic" v-for="(p,index) in picture.bookCity_url" :key = 'index'>
+        <img class = 'bigPicture' :src="p" alt="">
+      </div>
+      <!-- 中间的1px的边框  -->
+      <div class="border"></div>
+      <!-- 图书列表 -->
+        <!-- 第一层 -->
+      <div class="bookTitleList">
+        <ul class="bookList">
+          <li class="bookItem" v-for="(p,index) in picture.firstFloor" :key = 'index'>
+            <span class="desc">
+              <p class = 'blackDesc'>{{p.name}}</p>
+              <p class = 'redDesc'>{{p.desc}}</p>
+            </span>
+            <span class = 'bookPic'>
+              <img :src="p.img_url" alt="">
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div class="empty"></div>
+    </div>
+    <!-- 服装鞋包 -->
+    <div class="clothesAndBag">
+        <!-- 上面文字部分 -->
         <div class="headerDesc">
           <div class="titleTop" v-for="(p,index) in picture.title.clothing" :key = 'index'>
             <img :src="p" alt="">
@@ -172,15 +209,15 @@
             </li>
           </ul>
         </div>
-    <!-- 上边的1px的边框  -->
+        <!-- 上边的1px的边框  -->
         <div class="border"></div>
-    <!-- 下面的图片主体部分 -->
+        <!-- 下面的图片主体部分 -->
         <div class="bigPic" v-for="(p,index) in picture.clothing_url" :key = 'index'>
           <img class = 'bigPicture' :src="p" alt="">
         </div>
-    <!-- 下边的1px的边框  -->
+        <!-- 下边的1px的边框  -->
         <div class="border"></div>
-    <!-- 图书列表 -->
+      <!-- 图书列表 -->
       <!-- 第一层 -->
         <div class="firstFloorClothes">
           <div class="leftFloorWrapper" v-for="(p,index) in picture.secondFloor.womanClothing" :key = 'index'>
@@ -234,12 +271,12 @@
         </li>
       </ul>
       <!-- 中间的10px -->
-    <div class="empty"></div>
+      <div class="empty"></div>
     </div>
 
-<!-- 聚实惠 -->
+    <!-- 聚实惠 -->
     <div class="focusBenefit">
-  <!-- 上面文字部分 -->
+      <!-- 上面文字部分 -->
       <div class="headerDesc">
         <div class="titleTop" v-for="(p,index) in picture.title.focus" :key = 'index'>
           <img :src="p" alt="">
@@ -259,32 +296,32 @@
           </li>
         </ul>
       </div>
-  <!-- 上边的1px的边框  -->
+      <!-- 上边的1px的边框  -->
       <div class="border"></div>
-  <!-- 下面的图片主体部分 -->
+      <!-- 下面的图片主体部分 -->
       <div class="bigPic" v-for="(p,index) in picture.focusBenefit_url" :key = 'index'>
         <img class = 'bigPicture' :src="p" alt="">
       </div>
-  <!-- 下边的1px的边框  -->
+      <!-- 下边的1px的边框  -->
       <div class="border"></div>
-  <!-- 列表 -->
-  <!-- 第一层 -->
-        <ul class="secondFloorShoes">
-          <li class = 'shoesList' v-for="(p,index) in picture.thirdFloor.goods" :key = 'index'>
-            <div class="leftDesc">
-              <p class="topDesc">
-                {{p.name}}
-              </p>
-              <p class="bottomDesc">
-                {{p.desc}}
-              </p>
-            </div>
-            <div class="leftPic">
-              <img :src="p.img_url" alt="">
-            </div>
-          </li>
+      <!-- 列表 -->
+      <!-- 第一层 -->
+      <ul class="secondFloorShoes">
+        <li class = 'shoesList' v-for="(p,index) in picture.thirdFloor.goods" :key = 'index'>
+          <div class="leftDesc">
+            <p class="topDesc">
+              {{p.name}}
+            </p>
+            <p class="bottomDesc">
+              {{p.desc}}
+            </p>
+          </div>
+          <div class="leftPic">
+            <img :src="p.img_url" alt="">
+          </div>
+        </li>
 
-        </ul>
+      </ul>
       <!-- 第二层 -->
       <ul class="thirdFloorShoes">
         <li class="thirdShoeItem" v-for="(p,index) in picture.thirdFloor.secKilledSingle" :key = 'index'>
@@ -300,7 +337,7 @@
       <!-- 中间的17px -->
       <div class="bottomBorder"></div>
     </div>
-<!-- 偏好推荐 -->
+    <!-- 偏好推荐 -->
     <div class="preference">
       <h2 class="titleDesc">
         <div class="titleDetail">
@@ -341,7 +378,7 @@
             <span class="business">
              {{data.second_category_name}}
             </span>
-           <div class="price">
+            <div class="price">
              <span>
                点击查看
              </span>
@@ -361,7 +398,7 @@
             <span class="business">
              {{data.second_category_name}}
             </span>
-           <div class="price">
+            <div class="price">
              <span>
                点击查看
              </span>
@@ -380,7 +417,7 @@
         </div>
       </div>
     </div>
-<!-- 底部的版权信息 -->
+    <!-- 底部的版权信息 -->
     <footer class = 'footer'>
       <div class="footer-top">
         <a href="#">登录</a>
@@ -399,9 +436,9 @@
       </div>
       <a href="#top" class="ToTop">
           <img src="http://z.dangdang.com/static/img/go-top.b54271a.png" alt="">
-      </a>
+      </a> -->
     </footer>
-<!-- 侧边导航 -->
+    <!-- 侧边导航 -->
     <div class="adver" @click = "isShowAdver = !isShowAdver" v-show='isShowAdver'>
       <span>广</span>
       <span>告</span>
@@ -409,15 +446,12 @@
     </div>
 <!-- 红包雨 -->    
     <div class="redBagRain"  v-for = '(rb,index) in redBagRain.data.hongbaoyu.activity_list' :key = 'index' @click = "$router.push('/red_bag_rain')">
-      <img :src="rb.icon_h5" alt="">
-    </div>
-<!-- 到顶部 -->    
-    <a href = '#top' class="switchTop">
-      <img src="http://touch.m.dangdang.com/images/go-top.png" alt="">
+      <img :src="rb.icon_h5" alt=""/>
+    </div>   
+    <a href = "#top" class="switchTop">
+      <img src="http://touch.m.dangdang.com/images/go-top.png" alt=""/>
     </a>
-    <!-- end111111111111111111111111111111111111111end -->
   </div>
-
 </template>
 <script>
 import Swiper from 'swiper'
@@ -435,7 +469,8 @@ export default {
           picture:"",
           isShowAdver:true,
           redBagRain:"",
-          time: 6 * 60 * 60 * 1000
+          time: 6 * 60 * 60 * 1000,
+          sectionSearch:false
       }
     },
     computed:{
@@ -474,6 +509,9 @@ export default {
       },
       isClose(){
           this.$refs.beClosedAdver.remove()
+      },
+      isShowSearch(){
+        this.sectionSearch = !this.sectionSearch 
       }
     }
 }
@@ -561,7 +599,24 @@ export default {
         font-size 24px
         line-height 44px
         color #7a8992
-
+  .componentToSeacher
+    width 100%
+    height 100%
+    background-color #323232
+    .hotSearch
+      height 32px
+      line-height 32px
+      span
+        font-size 13px
+    .hotWord
+      height 28px
+      line-height 28px
+      font-size 13px
+      margin 0 13px
+      display flex
+      flex-wrap wrap
+      li
+        height 100%
   .swiper-container
     img
       width 100%

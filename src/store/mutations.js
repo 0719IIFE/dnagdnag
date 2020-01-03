@@ -24,7 +24,8 @@ export default {
       state.user = {}
     },
     setCount(state,countI) {
-    state.count=++state.count+countI  
+      console.log(countI)
+    state.count=state.count+countI
     },
     setDetailInfo(state,detail){
       state.detail=detail
