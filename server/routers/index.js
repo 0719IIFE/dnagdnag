@@ -21,6 +21,9 @@ const detail = require('../data/detail')
 const home = require('../data/home')
 const redBagRain = require('../data/redBagRain')
 const battle = require('../data/battle')
+const shangDian = require('../data/shangDian')
+const maoYi = require('../data/maoYi')
+const niu = require('../data/niu')
 const seckilled = require('../data/seckilled')
 const picture = require("../data/picture")
 /*
@@ -272,5 +275,16 @@ router.get("/picture", function (req, res) {
 	res.send(picture)
 })
 
+router.get("/shangDian",function (req,res){
+    res.send(shangDian)
+})
+
+router.get("/maoYi",function (req,res){
+    res.send(maoYi)
+})
+
+router.get("/niu",function (req,res){
+    res.send(niu)
+})
 module.exports = router;
 

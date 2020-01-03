@@ -43,8 +43,13 @@
       </div>
       <!-- 十个商品列表 -->
       <ul class="shopList">
-        <li class="shopItem" @click="handleClick(index)" v-for="(p,index) in picture.swiper_list" :key = 'index'>
-          <img :src="p" alt="">
+        <li class="shopItem" 
+          @click="$router.push(p.path)" 
+          v-for="(p,index) in picture.swiper_list" 
+          :key = 'index'>
+            <a :href="p.path ? '' : p.linkUrl">
+              <img :src="p.imgUrl" alt="">
+            </a>
         </li>
       </ul>
       <!-- 中间的1px的分割线 -->
