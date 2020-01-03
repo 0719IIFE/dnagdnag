@@ -5,6 +5,8 @@ import DeserveBuying from '../pages/DeserveBuying/DeserveBuying.vue'
 import ShopCart from '../pages/ShopCart/ShopCart.vue'
 import Login from '@/pages/Login/Login'
 import Profile from '@/pages/Profile/Profile'
+import Clothing from '../components/Clothing/Clothing.vue'
+
 
 
 export default [
@@ -14,6 +16,10 @@ export default [
         meta:{
             isShowFooter:true
         }
+    },
+    {
+        path:'/clothing',
+        component:Clothing
     },
     {
         path:'/category',

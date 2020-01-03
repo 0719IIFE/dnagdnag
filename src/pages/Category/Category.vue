@@ -134,11 +134,19 @@
                   </div>
 
                   <div class="fictionUpContent">
-                    <ul class="upList">
-                      <li v-for="(i,index) in item.detail" :key="index" v-show="index < 5">{{i.title}}</li>
-                      <li v-for="(i,index) in item.detail" :key="index + 'second'" v-show="item.isShowSec && index > 5">{{i.title}}</li>
-                      <li class="fold" @click="toggleUnfold(item)">
-                        {{item.isShowSec ? '收起': '查看更多'}}
+                    <ul class="upList" v-if="!item.show">
+                      <li v-for="(i,index) in item.detail" :key="index" v-show="index < 5"><p>{{i.title}}</p></li>
+                      <li class="fold" @click="toggleUnfold(item,true)">
+                        <p>查看更多</p>
+                        <span>
+                          <i class="iconfont icon-zhankai"></i>
+                        </span>
+                      </li>
+                    </ul>
+                    <ul class="upList" v-if="item.show">
+                      <li v-for="(i,index) in item.detail" :key="index"><p>{{i.title}}</p></li>
+                      <li class="fold" @click="toggleUnfold(item,false)">
+                        <p>收起</p>
                         <span>
                           <i class="iconfont icon-zhankai"></i>
                         </span>
@@ -225,19 +233,21 @@ export default {
     })
   },
   methods: {
-    toggleUnfold(item) {
+    toggleUnfold(item,flag) {
       // this.allCategoryObj[0].content.pile[0].group.forEach((item,i) =>
       //   item.__id = i
       // })
       // console.log(this.allCategoryObj[0].content.pile[0].group[index].__id === index)
       // console.log(this.allCategoryObj[0].content.pile[0].group,index)
-      if(!item.isShowSec) {
-        this.$set(item,'isShowSec',false)
-        item.isShowSec = !item.isShowSec
-      } else {
-        item.isShowSec = !item.isShowSec
-      }
-      this.showList = !this.showList
+      this.$set(item,'show',flag)
+      // item.show = flag
+      // if(!item.isShowSec) {
+      //   this.$set(item,'isShowSec',false)
+      //   item.isShowSec = !item.isShowSec
+      // } else {
+      //   item.isShowSec = !item.isShowSec
+      // }
+      // this.showList = !this.showList
     },
     handleClick(index) {
       //根据下标获取当前对象
@@ -411,7 +421,7 @@ export default {
           height 69px
           display flex
           justify-content space-between
-
+          overflow hidden
           .mini_bannner 
             width 92px
             height 40px
@@ -441,9 +451,11 @@ export default {
               font-size 20px
           .mini_right 
             margin-left 5px
+      .hasImgContainer
+        margin-top 10px
         .bookListContainer 
           width 286px
-          min-height 180px
+          min-height 120px
           background-color white
           margin-top 10px
           overflow hidden
@@ -452,7 +464,7 @@ export default {
               float left
               width 80px
               height 114px
-              padding 25px 6px 2px 6px
+              padding 15px 6px 2px 6px
               img 
                 width 68px
                 height 68px
@@ -485,16 +497,23 @@ export default {
               position relative
               display flex
               flex-wrap wrap
-              justify-content flex-end
+              justify-content space-between
               padding 0 14px
               li 
                 width 33.3333%
-                height 48px
+                height 44px
                 text-align center
-                line-height 48px
-                overflow hidden
+                //overflow hidden
+                //line-height 30px
+                vertical-align middle
                 border-bottom 1px solid #eee
+                display flex
+                align-items center
                 position relative
+                p
+                  width 100%
+                  font-size 13px
+                  text-align center
                 &:after 
                   content ''
                   width 1px
@@ -506,10 +525,11 @@ export default {
                   margin-top -7px
               li:nth-of-type(3n):after 
                 width 0
-              li:last-childafter 
+              li:last-child:after 
                 width 0
               .unfold, .fold 
                 color #bababa
+                text-align center
                 .iconfont 
                   font-size 12px
         .booksContainer 

@@ -1,5 +1,6 @@
 <template>
   <div id="clothingContainer" v-if="clothingObj">
+    <!-- 大头部 -->
     <div class="headerContainer">
       <!-- 服装馆头部 -->
       <header>
@@ -33,7 +34,7 @@
     <div class="blank"></div>
 
      <!-- 大nav图片 -->
-    <img class="bigNav" src="../public/images/bigNav.jpg" alt="">
+    <img class="bigNav" src="../../../public/images/bigNav.jpg" alt="">
 
     <div class="blank_10px"></div>
 
@@ -115,8 +116,8 @@
     <!-- 童装 -->
     <div class="childClothing">
       <img class="titleImg" :src="clothingObj.cClothing.title_img">
-      <img class="Img_h157" :src="clothingObj.cClothing.shuffling.img_url">
-      <img class="bottomImg" :src="clothingObj.cClothing.downImg.img_url">
+      <img class="Img_h157" :src="clothingObj.cClothing.shuffling[0].img_url">
+      <img class="bottomImg" :src="clothingObj.cClothing.downImg[0].img_url">
       <div class="iconContainer">
         <img :src="item.img_url" v-for='(item,index) in clothingObj.cClothing.value' :key='index'>
       </div>
@@ -127,7 +128,7 @@
     <!-- 户外运动 -->
     <div class="sport">
       <img class="titleImg" :src="clothingObj.sport.title_img">
-      <img class="Img_h157" :src="clothingObj.sport.shuffling.img_url">
+      <img class="Img_h157" :src="clothingObj.sport.shuffling[0].img_url">
       <div class="iconContainer">
         <img :src="item.img_url" v-for='(item,index) in clothingObj.sport.value' :key='index'>
       </div>
@@ -174,8 +175,8 @@
     <!-- 箱包 -->
     <div class="bag">
       <img class="titleImg" :src="clothingObj.bags.title_img">
-      <img class="Img_h157" :src="clothingObj.bags.shuffling.img_url">
-      <img class="bottomImg" :src="clothingObj.bags.downImg.img_url">
+      <img class="Img_h157" :src="clothingObj.bags.shuffling[0].img_url">
+      <img class="bottomImg" :src="clothingObj.bags.downImg[0].img_url">
       <div class="iconContainer">
         <img :src="item.img_url" v-for='(item,index) in clothingObj.bags.value' :key='index'>
       </div>
@@ -218,9 +219,6 @@
       </div>
 
     </div>
-
-
-
   </div>
 </template>
 
@@ -228,7 +226,7 @@
   import Swiper from 'swiper'
   import 'swiper/css/swiper.css'
   import BScroll from 'better-scroll'
-  import {reqClothing} from '../api/index'
+  import {reqClothing} from '../../api'
 
   export default {
     data () {

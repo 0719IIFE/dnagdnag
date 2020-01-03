@@ -31,7 +31,7 @@
       </div>
       <!-- 十个商品列表 -->
       <ul class="shopList">
-        <li class="shopItem" v-for="(p,index) in picture.swiper_list" :key = 'index'>
+        <li class="shopItem" @click="handleClick(index)" v-for="(p,index) in picture.swiper_list" :key = 'index'>
           <img :src="p" alt="">
         </li>
       </ul>
@@ -441,6 +441,14 @@ export default {
           }
         })
       })
+    },
+    methods:{
+      handleClick(index){
+        //判断index的值
+        if(index == 5){
+          this.$router.push('/clothing')
+        }
+      }
     }
 }
 </script>
