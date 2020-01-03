@@ -52,6 +52,6 @@ app.get('/test', function (req, res) {
     .catch(error => {
         console.error('连接数据库失败', error)
     }) */
-    app.listen('4001', () => {
+    app.listen('4000', () => {
         console.log('服务器启动成功, 请访问: http://localhost:4000')
     })
