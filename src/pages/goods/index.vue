@@ -1,5 +1,5 @@
 <template>
-<div class="all">
+<div class="all" v-if="detail">
     <Header></Header>
   <div class='detailContainer'>
     <!-- 轮播图 -->
@@ -14,7 +14,7 @@
     <!-- 轮播图结束 -->
       <!-- 图书标题及价格开始-->
       <div class="content">
-        <div class="title">
+        <div class="title" v-if="detail.dataProduct">
           <p><img src="./images/icon_zy.png" /> {{detail.dataProduct.productName}} </p>
           <p>吉林出版社</p>
           <a class="promo_title"  
@@ -43,7 +43,7 @@
     <!-- 评论模块开始 -->
       <div class="book_score">
         <div class="left">
-          <div class="stars_div">
+          <div class="stars_div" v-if="detail.new_price">
             <span class="score">{{detail.new_price.discount}}</span>
             <div class="stars">
               <span class="red"><i class='iconfont icon-pingfenmini'></i></span>
@@ -66,7 +66,7 @@
   
           <div class="promote_name"><span class="aa">促销</span></div>
           <div class="promo_section">
-            <div>
+            <div v-if="detail.promo_model">
               <span class="coupon_title">{{detail.promo_model[0].promotion_tag}}</span>
               <span class="icon_list">{{detail.promo_model[0].word}}</span>
             </div>
@@ -86,7 +86,7 @@
     <!-- 促销模块结束-->
     <!-- 图书信息模块开始 -->
       <div class="book-info">
-        <section>
+        <section v-if="detail.ad_lis">
           <span>作者</span>
           <span>{{detail.ad_list.author_name}}</span>
           <span>查看作品</span>
@@ -118,7 +118,7 @@
       <section class="jump_detail">
         <div class="address">
           <div class="address_dl">
-            <dl @click="showPicker=true">
+            <dl @click="showPicker=true" v-if="detail.arriver_info">
               <dt>送至：</dt>
               <dd>{{'地址:'||value[0].name}}
                 <span v-if="value">
@@ -179,7 +179,7 @@
         <div><h4>短评（1620）<span class="good_rate">100.0%好评</span> 
             <div class="write_comment" @click="$router.replace('/comment')">写短评</div></h4>
         </div>
-        <ul class="comment_list">
+        <ul class="comment_list" v-if="detail.comment_list">
           <li v-for="(item,index) in  detail.comment_list.data" :key="index"><a href="javascript:;">{{item.name}}({{item.label_id}})</a></li>
         </ul>
         <ul class="comment_content">
