@@ -9,7 +9,7 @@
         <span> 
           <i class="iconfont icon-sousuo"></i>
         </span>
-        <input type="text" placeholder="搜索商品/种类/店铺" />
+        <input type="text" placeholder="搜索商品/种类/店铺"/>
       </div>
       <span class="sandian">
         <i class="iconfont icon-sandian"></i>
@@ -91,7 +91,7 @@
                   <div class="fictionUpContent">
                     <ul class="upList">
                       <li v-for="(i,index) in item.detail" :key="index" v-show="index < 5">{{i.title}}</li>
-                      <li v-for="(i,index) in item.detail" :key="index + 'second'" v-show="item.isShowSec">{{i.title}}</li>
+                      <li v-for="(i,index) in item.detail" :key="index + 'second'" v-show="item.isShowSec && index > 5">{{i.title}}</li>
                       <li class="fold" @click="toggleUnfold(item)">
                         {{item.isShowSec ? '收起': '查看更多'}}
                         <span>
@@ -133,7 +133,8 @@ export default {
       currentIndex: 0,
       currentObj: {},
       styleType: "",
-      showList: false
+      showList: false,
+      isSearch:false,
     }
   },
 
@@ -180,12 +181,11 @@ export default {
       return (this.currentIndex = index)
     },
     goto (path) {
-/*        console.log('goto()', this.$router) */
-        if (this.$route.path!==path) {
-            this.$router.replace(path)
-        } else { // 如果请求的时当前的, 直接强制刷新
-            window.location.reload()
-        }
+      if (this.$route.path!==path) {
+          this.$router.replace(path)
+      } else { // 如果请求的时当前的, 直接强制刷新
+          window.location.reload()
+      }
     }
   },
 
