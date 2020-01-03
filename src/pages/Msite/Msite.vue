@@ -15,7 +15,7 @@
             <input class = 'searchContent' type = 'text' placeholder = '米小圈'/>
           </div>
         </div>
-        <div class = 'iconMenu'>
+        <div class = 'iconMenu' @click="$router.push('/category')">
           <i class = 'iconfont icon-mulu'></i>
         </div>
       </div>
