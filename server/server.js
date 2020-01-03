@@ -47,10 +47,11 @@ mongoose.connect('mongodb://localhost/users', {useNewUrlParser: true})
     .then(() => {
         console.log('连接数据库成功!!!')
         // 只有当连接上数据库后才去启动服务器
-        server.listen('4000', () => {
-            console.log('服务器启动成功, 请访问: http://localhost:4000')
-        })
+		server.listen('4000', () => {
+			console.log('服务器启动成功, 请访问: http://localhost:4000')
+		})
     })
     .catch(error => {
         console.error('连接数据库失败', error)
     })
+    

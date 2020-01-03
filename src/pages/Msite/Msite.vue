@@ -15,7 +15,7 @@
             <input class = 'searchContent' type = 'text' placeholder = '米小圈'/>
           </div>
         </div>
-        <div class = 'iconMenu'>
+        <div class = 'iconMenu' @click="$router.push('/category')">
           <i class = 'iconfont icon-mulu'></i>
         </div>
       </div>
@@ -44,23 +44,20 @@
         </div>
         <div class="dsContent">
           <!-- 秒杀时间 -->
-          <span class="seckillingTime">
+         <span class="seckillingTime">
             <span class = 'seckillingContent'>
               <span class="time">
-                <span>0</span>
-                <span>6</span>
-              </span>
-              <span class = 'text'>时</span>
-              <span class="time">
-                <span>0</span>
-                <span>0</span>
-              </span>
-              <span class = 'text'>分</span>
-              <span class="time sec">
-                <span>0</span>
-                <span>0</span>
-              </span>
-              <span class = 'text'>秒</span>`
+                 <van-count-down :time="time">
+                  <template v-slot="timeData">
+                    <span class="item">{{ timeData.hours }}</span>
+                    <span class="text">时</span>
+                    <span class="item">{{ timeData.minutes }}</span>
+                    <span class="text">分</span>
+                    <span class="item red">{{ timeData.seconds }}</span>
+                    <span class="text">秒</span>
+                  </template>
+                </van-count-down>
+              </span> 
             </span>
           </span>
           <!-- 秒杀列表 -->
@@ -114,7 +111,7 @@
         <div class="border"></div>
     <!-- 下面的图片主体部分 -->
         <div class="bigPic" v-for="(p,index) in picture.bookCity_url" :key = 'index'>
-          <img class = 'bigPicture' src="../images/title_pic/2020.jpg" alt="">
+          <img class = 'bigPicture' :src="p" alt="">
         </div>
     <!-- 中间的1px的边框  -->
         <div class="border"></div>
@@ -248,8 +245,8 @@
   <!-- 上边的1px的边框  -->
       <div class="border"></div>
   <!-- 下面的图片主体部分 -->
-      <div class="bigPic">
-        <img class = 'bigPicture' src="../images/title_pic/2020.jpg" alt="">
+      <div class="bigPic" v-for="(p,index) in picture.focusBenefit_url" :key = 'index'>
+        <img class = 'bigPicture' :src="p" alt="">
       </div>
   <!-- 下边的1px的边框  -->
       <div class="border"></div>
@@ -404,6 +401,9 @@ import Swiper from 'swiper'
 import "swiper/css/swiper.css"
 import BScroll from "better-scroll"
 import {reqHome,reqSecKilled,reqPicture,reqRedBagRain} from '../../api'
+import Vue from 'vue'
+import { CountDown } from 'vant'
+Vue.use(CountDown);
 export default {
     data(){
       return{
@@ -412,25 +412,13 @@ export default {
           picture:"",
           isShowAdver:true,
           redBagRain:"",
-          totalTime:21600,
-          hour:'',
-          minute:'',
-          second:''
+          time: 6 * 60 * 60 * 1000
       }
     },
     computed:{
       seckilledList(){
         return this.seckilledDatas.filter((item)=>item.img_url)
       }
-    /*   secKilledTime(){
-        setTimeout(() => {
-          this.time -=  1
-          this.hour = Math.floor((this.time)/ 3600)
-          this.minute = Math.floor(this.time/360)
-          this.second = (this.time) % 60
-          console.log(this.hour,this.minute,this.second)
-        }, 1000);
-      } */
     },
     async mounted(){
       let result  = await reqSecKilled()
@@ -555,24 +543,31 @@ export default {
           padding-top 3px
           box-sizing border-box
           .time
-            display inline-block
-            width 19px
+            display inline-block 
+            width 100%
             height 25px
             text-align center
-            background-color black
             line-height 25px
-            &.sec
-              background-color #f3344a
-            span
+            .item 
+              display inline-block
+              width 19px
+              height 21px
+              color #fff
               font-size 14px
-              color white
+              text-align center
+              line-height 21px
+              background-color #323232
+              border-radius 5px
+            .red
+              background-color red  
+            .text
+              display inline-block
+              text-align center
               line-height 25px
-          .text
-            display inline-block
-            width 14px
-            height 100%
-            font-size 14px
-            margin 0 6px
+              width 13px
+              height 100%
+              font-size 13px
+              margin 0 6px
 
 
 
