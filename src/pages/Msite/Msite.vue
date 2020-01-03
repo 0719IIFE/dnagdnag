@@ -1,18 +1,17 @@
 <template>
   <div id = 'firstView' v-if="picture && redBagRain">
-<!-- 点击关闭的广告 -->
-  <div class="clickAdver" ref = 'beClosedAdver' v-show = '!sectionSearch'>
-    <div class="close" @click = 'isClose'>
-      <img src="http://touch.m.dangdang.com/images/close-app-download.png" alt="">
-    </div>
-    <div class="left">
-      <img src="http://img61.ddimg.cn/upload_img/00742/123/zuobian-1541766933.png" alt="">
-    </div>
-    <div class="left">
-      <img src="http://img62.ddimg.cn/upload_img/00742/123/youbian-1541766952.png" alt="">
+    <!-- 点击关闭的广告 -->
+    <div class="clickAdver" ref = 'beClosedAdver'>
+      <div class="close" @click = 'isClose'>
+        <img src="http://touch.m.dangdang.com/images/close-app-download.png" alt="">
+      </div>
+      <div class="left">
+        <img src="http://img61.ddimg.cn/upload_img/00742/123/zuobian-1541766933.png" alt="">
+      </div>
+      <div class="left">
+        <img src="http://img62.ddimg.cn/upload_img/00742/123/youbian-1541766952.png" alt="">
+      </div>
     </div>  
-  </div>
-
   <!-- 隐藏部分 -->
   <div class = 'componentToSeacher' v-show = 'sectionSearch'>
     <div class = 'header'>
@@ -54,6 +53,7 @@
       </a>
     </div>
   </div>
+
   <div class="first" v-show = '!sectionSearch'>  
     <!-- 头部的输入框+logo -->
     <div class = 'header'>
@@ -554,14 +554,14 @@ export default {
       height 100%
       img
         width 100%
-        height 100% 
-    .right 
+        height 100%
+    .right
       width 50%
-      height 100% 
+      height 100%
       img
         width 100%
-        height 100%  
-    .close 
+        height 100%
+    .close
       width 25px
       height 25px
       position absolute
@@ -569,7 +569,7 @@ export default {
       right 11px
       img
         width 100%
-        height 100% 
+        height 100%
   .header
     width 100%
     height 44px
@@ -732,12 +732,12 @@ export default {
           padding-top 3px
           box-sizing border-box
           .time
-            display inline-block 
+            display inline-block
             width 100%
             height 25px
             text-align center
             line-height 25px
-            .item 
+            .item
               display inline-block
               width 19px
               height 21px
@@ -748,7 +748,7 @@ export default {
               background-color #323232
               border-radius 5px
             .red
-              background-color red  
+              background-color red
             .text
               display inline-block
               text-align center
@@ -1470,7 +1470,7 @@ export default {
     position fixed
     right 12px
     bottom 50px
-    img 
+    img
       width 100%
       height 100%
 </style>
