@@ -1,10 +1,44 @@
 <template>
-    <div id = 'redBag'>
-        <header class= 'header'> 
+    <div class = 'redBag'>
+        <div class= 'header'> 
             <i class = 'iconfont icon-houtui' @click = "$router.back('/msite')"></i>
             <span class = 'text'>红包雨召唤</span>
-            <i class = 'iconfont icon-sandian'></i>
-        </header>
+            <i class = 'iconfont icon-sandian' @click = "isShowFooter"></i>
+        </div>
+        <transition name = 'fade' mode = 'in-out'>
+            <div class="footer_guide" v-show = 'showFooter'>
+                <span class="guide_item"  @click="$router.push('/msite')">
+                    <span>
+                        <i class="iconfont icon-xuanzhongshangcheng"></i>
+                    </span>
+                    <span>首页</span>
+                </span>
+                <span class="guide_item" @click="$router.push('/category')">
+                    <span>
+                        <i class="iconfont icon-mulu"></i>
+                    </span>
+                    <span>分类</span>
+                </span>
+                <span class="guide_item"  @click="$router.push('/deserveBuying')">
+                    <span>
+                        <i class="iconfont icon-bao"></i>
+                    </span>
+                    <span>值得买</span>
+                </span>
+                <span class="guide_item" @click="$router.push('/cart')">
+                    <span class="item_icon">
+                        <i class="iconfont icon-gouwuche2"></i>
+                    </span>
+                    <span>购物车</span>
+                </span>
+                <span class="guide_item" @click="$router.push('/profile')">
+                    <span class="item_icon">
+                        <i class="iconfont icon-person"></i>
+                    </span>
+                    <span>我的当当</span>
+                </span>
+            </div>
+        </transition>
         <div class="main">
             <img class = 'outer' src="http://img63.ddimg.cn/upload_img/00459/h5/main_bg-1541586516.jpg" alt="">
                     <!-- 二维码 -->
@@ -32,17 +66,27 @@
 </template>
 <script>
 export default {
-
+    data(){
+        return {
+            showFooter:false
+        }
+    },
+    methods:{
+        isShowFooter(){
+            this.showFooter = !this.showFooter
+        }
+    }
 }
 </script>
 <style lang='stylus' scoped>
-#redBag
+.redBag
     width 100%
     height 100%
     .header 
         width 100%
         height 53px
         display flex
+        background-color white
         .icon-houtui
             width 48px
             height 100%
@@ -61,6 +105,33 @@ export default {
             line-height 53px
             text-align center
             font-size 17px
+    .fade-enter-active, .fade-leave-active 
+        transition all .5s
+    .fade-enter, .fade-leave-to
+        opacity 0
+        transform translateY(-53px)
+    .footer_guide
+        border-top 1px solid #eee
+        z-index 100
+        display flex
+        left 0
+        top 53px
+        width 100%
+        height 61px
+        padding 4px 0
+        box-sizing border-box
+        background-color #fff 
+        .guide_item
+            display flex
+            flex-direction column
+            text-align center
+            width 20%
+            span
+                margin-top 4px
+                font-size 15px
+                .iconfont
+                    font-size 25px        
+  
     .main    
         width 100%
         height 580px
