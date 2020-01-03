@@ -1,7 +1,7 @@
 import axios from "axios"
 import qs from "qs"
 import { Indicator, Toast, MessageBox } from 'mint-ui'
-import store from '@/vuex/store'
+import store from '@/store/store'
 import router from '@/router'
 
 const instance = axios.create({

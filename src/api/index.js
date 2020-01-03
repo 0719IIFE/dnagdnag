@@ -33,3 +33,5 @@ export const reqSmsLogin = ({phone, code}) => ajax.post('/login_sms', {phone, co
 
 //  自动登陆
 export const reqAutoLogin = () => ajax.get('/auto_login')
+//获取商品详情
+export const getDetail=()=>ajax.get("/detail")
