@@ -5,16 +5,12 @@ import DeserveBuying from '../pages/DeserveBuying/DeserveBuying.vue'
 import ShopCart from '../pages/ShopCart/ShopCart.vue'
 import Login from '@/pages/Login/Login'
 import Profile from '@/pages/Profile/Profile'
-<<<<<<< HEAD
 import RedBagRain from '@/pages/RedBagRain/RedBagRain'
-
-=======
 import Goods from '../pages/goods'
 import Cart from '../pages/cart/cart.vue'
 import Detail from '../pages/detail/detail.vue'
 import Recommend from '../pages/recommend/recommend.vue'
 import Comment from '../pages/comment/comment.vue'
->>>>>>> 511b7ece3de31845de7536afb561bc8adcd5de08
 
 export default [
     {
