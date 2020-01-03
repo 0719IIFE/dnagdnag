@@ -24,7 +24,7 @@
             <div class = 'searchIcon'>
               <i class = 'iconfont icon-search'></i>
             </div>
-            <input class = 'searchContent' @focus = 'isShowSearch' type = 'text' placeholder = '米小圈'/>
+            <input class = 'searchContent' v-on:focus = 'isShowSearch' type = 'text' placeholder = '米小圈'/>
           </div>
         </div>
         <div class = 'iconMenu' @click = "$router.push('/category')">
@@ -33,7 +33,7 @@
       </div>    
     </div>
     <!-- 隐藏部分 -->
-    <div class = 'componentToSeacher' v-show = 'componentSearch'>
+    <div class = 'componentToSeacher' v-show = 'sectionSearch'>
       <p class= 'hotSearch'>
         <i class = 'iconfont icon-remensousuo'></i>
         <span>热门搜索</span>
@@ -449,7 +449,7 @@ export default {
           isShowAdver:true,
           redBagRain:"",
           time: 6 * 60 * 60 * 1000,
-          componentSearch:false
+          sectionSearch:false
       }
     },
     computed:{
@@ -490,7 +490,7 @@ export default {
           this.$refs.beClosedAdver.remove()
       },
       isShowSearch(){
-        this.componentSearch = !this.componentSearch 
+        this.sectionSearch = !this.sectionSearch 
       }
     }
 }
