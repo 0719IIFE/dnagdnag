@@ -3,7 +3,9 @@ import Msite from '../pages/Msite/Msite.vue'
 import Category from '../pages/Category/Category.vue'
 import DeserveBuying from '../pages/DeserveBuying/DeserveBuying.vue'
 import ShopCart from '../pages/ShopCart/ShopCart.vue'
-import Profile from '../pages/Profile/Profile.vue'
+import Login from '@/pages/Login/Login'
+import Profile from '@/pages/Profile/Profile'
+
 
 export default [
     {
@@ -37,6 +39,10 @@ export default [
         meta:{
             isShowFooter:true
         }
+    },
+    {
+        path:'/login',
+        component:Login,
     },
     {
         path:'/',

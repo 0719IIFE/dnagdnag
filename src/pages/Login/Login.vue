@@ -164,7 +164,7 @@
             this.$store.dispatch('saveUser', user) // 将user和token保存到state, 将token保存local
 
             // 跳转到个人中心
-            this.$router.replace({path: '/personal'})
+            this.$router.replace({path: '/profile'})
           } else {
             MessageBox('提示', result.msg)
           }
