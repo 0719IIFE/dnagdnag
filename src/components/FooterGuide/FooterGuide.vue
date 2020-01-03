@@ -58,8 +58,8 @@
     left 0
     bottom 0
     width 100%
-    height 50px
-    padding 6px 0
+    height 46px
+    padding 4px 0
     box-sizing border-box
     background-color #fff
     .guide_item

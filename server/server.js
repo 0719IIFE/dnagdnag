@@ -53,5 +53,5 @@ mongoose.connect('mongodb://localhost/users', {useNewUrlParser: true})
     })
     .catch(error => {
         console.error('连接数据库失败', error)
-    })
-    
+    }) 
+

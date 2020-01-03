@@ -5,6 +5,7 @@ import DeserveBuying from '../pages/DeserveBuying/DeserveBuying.vue'
 import ShopCart from '../pages/ShopCart/ShopCart.vue'
 import Login from '@/pages/Login/Login'
 import Profile from '@/pages/Profile/Profile'
+import RedBagRain from '@/pages/RedBagRain/RedBagRain'
 import Goods from '../pages/goods'
 import Cart from '../pages/cart/cart.vue'
 import Detail from '../pages/detail/detail.vue'
@@ -43,6 +44,10 @@ export default [
         meta:{
             isShowFooter:true
         }
+    },
+    {
+        path:'/red_bag_rain',
+        component:RedBagRain
     },
     {
         path:'/login',

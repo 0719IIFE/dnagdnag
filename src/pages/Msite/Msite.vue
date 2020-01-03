@@ -1,5 +1,17 @@
 <template>
   <div id = 'firstView' v-if="picture && redBagRain">
+<!-- 点击关闭的广告 -->
+  <div class="clickAdver" ref = 'beClosedAdver'>
+    <div class="close" @click = 'isClose'>
+      <img src="http://touch.m.dangdang.com/images/close-app-download.png" alt="">
+    </div>
+    <div class="left">
+      <img src="http://img61.ddimg.cn/upload_img/00742/123/zuobian-1541766933.png" alt="">
+    </div>
+    <div class="left">
+      <img src="http://img62.ddimg.cn/upload_img/00742/123/youbian-1541766952.png" alt="">
+    </div>  
+  </div>
 <!-- 特价以上 -->
     <div class="first">
         <!-- 头部的输入框+logo -->
@@ -15,7 +27,7 @@
             <input class = 'searchContent' type = 'text' placeholder = '米小圈'/>
           </div>
         </div>
-        <div class = 'iconMenu' @click="$router.push('/category')">
+        <div class = 'iconMenu' @click = "$router.push('/category')">
           <i class = 'iconfont icon-mulu'></i>
         </div>
       </div>
@@ -72,7 +84,7 @@
                 </div>
               </li>
               <li class = 'goodsDsItem'>
-                <img src="../images/other/more.png" alt="">
+                <img src="http://img60.ddimg.cn/upload_img/00610/new_index/more.png" alt="">
               </li>
             </ul>
             <div class = 'empty'></div>
@@ -158,8 +170,8 @@
     <!-- 上边的1px的边框  -->
         <div class="border"></div>
     <!-- 下面的图片主体部分 -->
-        <div class="bigPic">
-          <img class = 'bigPicture' src="../images/title_pic/2020.jpg" alt="">
+        <div class="bigPic" v-for="(p,index) in picture.clothing_url" :key = 'index'>
+          <img class = 'bigPicture' :src="p" alt="">
         </div>
     <!-- 下边的1px的边框  -->
         <div class="border"></div>
@@ -384,14 +396,20 @@
           <img src="http://z.dangdang.com/static/img/go-top.b54271a.png" alt="">
       </a>
     </footer>
+<!-- 侧边导航 -->
     <div class="adver" @click = "isShowAdver = !isShowAdver" v-show='isShowAdver'>
       <span>广</span>
       <span>告</span>
       <span>x</span>
     </div>
-    <div class="redBagRain"  v-for = '(rb,index) in redBagRain.data.hongbaoyu.activity_list' :key = 'index'>
+<!-- 红包雨 -->    
+    <div class="redBagRain"  v-for = '(rb,index) in redBagRain.data.hongbaoyu.activity_list' :key = 'index' @click = "$router.push('/red_bag_rain')">
       <img :src="rb.icon_h5" alt="">
     </div>
+<!-- 到顶部 -->    
+    <a href = '#top' class="switchTop">
+      <img src="http://touch.m.dangdang.com/images/go-top.png" alt="">
+    </a>
     <!-- end111111111111111111111111111111111111111end -->
   </div>
 
@@ -441,15 +459,46 @@ export default {
           }
         })
       })
+    },
+    methods:{
+      isClose(){
+        this.$refs.beClosedAdver.remove()
+      }
     }
 }
 </script>
 
-<style lang = 'stylus'>
+<style lang = 'stylus' scoped>
 #firstView
   width 100%
   height 100%
   background-color #eff4fa
+  .clickAdver
+    width 100%
+    height 70px
+    position relative
+    display flex
+    .left
+      width 50%
+      height 100%
+      img
+        width 100%
+        height 100% 
+    .right 
+      width 50%
+      height 100% 
+      img
+        width 100%
+        height 100%  
+    .close 
+      width 25px
+      height 25px
+      position absolute
+      top 11px
+      right 11px
+      img
+        width 100%
+        height 100% 
   .header
     width 100%
     height 44px
@@ -1049,7 +1098,7 @@ export default {
         .dataFirst
           width 100%
           height 186px
-          background-image url("../images/bg.png")
+          background-image url("http://touch.m.dangdang.com/images/recommend_bg@3x.png")
           background-size 100% 100%
           .preferPic
             width 100%
@@ -1106,7 +1155,7 @@ export default {
         .dataSecond
           width 100%
           height 186px
-          background-image url('../images/bg2.png')
+          background-image url('http://touch.m.dangdang.com/images/shop_bg@3x.png')
           background-size 100% 100%
           .preferPic
             width 100%
@@ -1272,5 +1321,13 @@ export default {
     img
       width 100%
       height 100%
-
+  .switchTop
+    width 40px
+    height 40px
+    position fixed
+    right 12px
+    bottom 50px
+    img 
+      width 100%
+      height 100%
 </style>
