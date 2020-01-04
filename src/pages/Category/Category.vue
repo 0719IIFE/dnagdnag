@@ -61,8 +61,8 @@
                 <div class="bookListContainer" v-if="item.style_type == 2">
                   <p class="bookTitle">{{item.group_name || item.pile_name}}</p>
                   <ul class="booksList">
-                    <li v-for="(dItem,index) in item.detail" :key="index">
-                      <img :src="dItem.icon" />
+                    <li v-for="(dItem,index) in item.detail" :key="index" @click="goto(dItem.link_url)">
+                      <img :src="dItem.icon"/>
                       <p>{{dItem.title}}</p>
                     </li>
                   </ul>

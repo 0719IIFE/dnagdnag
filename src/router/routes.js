@@ -110,11 +110,15 @@ export default [
             {
                 path:'/sweater/shop',
                 component:Shop
-                },
+            },
             {
                 path:'/sweater/Lyh',
                 component:Lyh
-            }
+            },
+            {
+                path:'/sweater',
+                redirect:'/sweater/Lyh'
+            },
         ]
     },
     {
