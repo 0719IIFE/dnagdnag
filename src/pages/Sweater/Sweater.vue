@@ -1,7 +1,7 @@
 <template>
 <section class="banner">
   <!-- 头部开始 -->
-    <div class="header">
+    <!-- <div class="header">
       <span>
         <i class="iconfont icon-jiantou2"></i>
       </span>
@@ -13,7 +13,8 @@
       <div class="sousuo">
         搜索
       </div>
-    </div>
+    </div> -->
+    <AllPagesHeader/>
     <div class="tu">
       <a href=""><img src="http://img54.ddimg.cn/221820114003944_y.jpg" alt=""></a>
     </div>
@@ -54,6 +55,7 @@
 
   .banner
     position relative
+    overflow hidden
     .header //头部公共css
       display flex
       justify-content space-between
@@ -128,6 +130,7 @@
             width 93px
             height 28px
             font-size 14px
+            margin-top 1px
             &.on  
               background-color red
               color white
