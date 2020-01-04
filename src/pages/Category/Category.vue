@@ -71,7 +71,7 @@
                 <div class="fictionContainer" v-if="item.style_type == 1">
                   <div class="fictionHeader">
                     <span class="fictionHeaderLeft bookTitle">{{item.group_name}} ></span>
-                    <span class="fictionHeaderRight">{{item.more}} ></span>
+                    <span class="fictionHeaderRight" @click="goto('/library')">{{item.more}} ></span>
                   </div>
 
                   <div class="fictionUpContent">
@@ -99,7 +99,7 @@
                 <div class="booksContainer" v-if="item.style_type == 3">
                   <div class="fictionHeader">
                     <span class="fictionHeaderLeft bookTitle">{{item.group_name}} ></span>
-                    <span class="fictionHeaderRight">{{item.more}} ></span>
+                    <span class="fictionHeaderRight" @click="goto('/library')">{{item.more}} ></span>
                   </div>
                   <div class="boonsContent">
                     <p v-for="(Ditem,index) in item.detail" :key="index">{{Ditem.title}}</p>
@@ -175,20 +175,7 @@ export default {
   },
   methods: {
     toggleUnfold(item,flag) {
-      // this.allCategoryObj[0].content.pile[0].group.forEach((item,i) =>
-      //   item.__id = i
-      // })
-      // console.log(this.allCategoryObj[0].content.pile[0].group[index].__id === index)
-      // console.log(this.allCategoryObj[0].content.pile[0].group,index)
       this.$set(item,'show',flag)
-      // item.show = flag
-      // if(!item.isShowSec) {
-      //   this.$set(item,'isShowSec',false)
-      //   item.isShowSec = !item.isShowSec
-      // } else {
-      //   item.isShowSec = !item.isShowSec
-      // }
-      // this.showList = !this.showList
     },
     handleClick(index) {
       //根据下标获取当前对象
@@ -284,7 +271,6 @@ export default {
         padding-left 5px
     .footer_guide
       border-top 1px solid #eee
-      z-index -1
       display flex
       position absolute
       top 45px
@@ -316,7 +302,7 @@ export default {
     background-color #eff4fa
     border-top 1px solid #eee
     transition all 0.5s
-    .bookTitle
+    .bookTitle 
       padding 7px 0 0 14px
       font-size 13px
       font-weight bold
@@ -326,7 +312,7 @@ export default {
       float left
       .allCategoryObj
         width 80px
-        height 1457px
+        height 1410px
         background-color #eff4fa
         li
           width 100%
@@ -343,8 +329,8 @@ export default {
             font-size 14px
             text-align center
             line-height 47px
-    .wrapper
-      height 620px
+    .wrapper 
+      height 575px
       overflow hidden
       .rightNav
         float left
@@ -431,8 +417,8 @@ export default {
               color #8e8e8e
           .fictionUpContent
             width 286px
-            min-height 98px
-            .upList
+            min-height 49px
+            .upList 
               // height 98px
               overflow hidden
               position relative
@@ -444,8 +430,6 @@ export default {
                 width 33.3333%
                 height 44px
                 text-align center
-                //overflow hidden
-                //line-height 30px
                 vertical-align middle
                 border-bottom 1px solid #eee
                 display flex

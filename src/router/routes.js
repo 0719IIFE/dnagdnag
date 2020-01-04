@@ -12,10 +12,10 @@ import JinRiCuXiao from "../pages/jinRiCuXiao/jinRiCuXiao.vue"
 import Sweater from '../pages/Sweater/Sweater.vue'
 import Library from '../pages/Library/Library'
 import RedBagRain from '@/pages/RedBagRain/RedBagRain'
-import Goods from '../pages/goods'
-import Cart from '../pages/cart/cart.vue'
-import Detail from '../pages/detail/detail.vue'
-import Recommend from '../pages/recommend/recommend.vue'
+import Goods from '@/pages/goods'
+import Cart from '@/pages/cart/cart'
+import Detail from '@/pages/detail/detail'
+import Recommend from '@/pages/recommend/recommend'
 import Comment from '../pages/comment/comment.vue'
 import Shop from '../pages/Sweater/Shop.vue'
 import Lyh from '../pages/Sweater/liuyanhu.vue'
@@ -33,7 +33,10 @@ export default [
     },
     {
         path:'/clothing',
-        component:Clothing
+        component:Clothing,
+        meta:{
+            isShowFooter:true
+        }
     },
     {
         path:'/category',

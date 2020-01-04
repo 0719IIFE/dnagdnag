@@ -3,7 +3,7 @@
     <!-- 大头部 -->
     <div class="headerContainer">
       <!-- 服装馆头部 -->
-      <header>
+      <!-- <header>
         <span>
           <i class="iconfont icon-back"></i>
         </span>
@@ -11,7 +11,10 @@
         <span>
           <i class="iconfont icon-sandian"></i>
         </span>
-      </header>
+      </header> -->
+
+      <!-- 引入mianheader组件 -->
+      <MainHeader :title="this.title"/>
 
       <!-- 服装馆轮播图 -->
       <div class="swiper-container">
@@ -227,6 +230,7 @@
   import 'swiper/css/swiper.css'
   import BScroll from 'better-scroll'
   import {reqClothing} from '../../api'
+  import MainHeader from "../mainHeader/mainHeader"
 
   export default {
     data () {
@@ -234,8 +238,12 @@
         clothingObj:"",
         isActive:false,
         currentIndex:0,
+        title:"服装馆",
         ulList:['女装',"男装","童装童鞋","户外运动","男女鞋","内衣配饰","箱包皮具","珠宝配饰"]
       }
+    },
+    props : {
+      MainHeader
     },
     async mounted(){
       //异步发送请求
