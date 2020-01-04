@@ -5,7 +5,7 @@ import DeserveBuying from '../pages/DeserveBuying/DeserveBuying.vue'
 import ShopCart from '../pages/ShopCart/ShopCart.vue'
 import Login from '@/pages/Login/Login'
 import Profile from '@/pages/Profile/Profile'
-import Clothing from '../components/Clothing/Clothing.vue'
+import Clothing from '@/pages/Clothing/Clothing.vue'
 
 import TeJiaShuShi from "../pages/teJiaShuShi/teJiaShuShi.vue"
 import JinRiCuXiao from "../pages/jinRiCuXiao/jinRiCuXiao.vue"
