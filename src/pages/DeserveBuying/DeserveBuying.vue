@@ -1,7 +1,7 @@
 <template>
     <div class="deserveShopContainer" id="top" v-if="data">
         <header class="header">
-            <PageHeader title="值得买"/>
+            <AllPagesHeader title="值得买"/>
             <ul class="header-list">
                 <li v-for="(item,index) in data.nav" :key="index">
                     <img :src="item.iconImageUrl" alt="">
@@ -105,7 +105,6 @@
 
 <script>
     import BScroll from "better-scroll"
-    import PageHeader from "../../components/pagesHeader/pagesHeader"
     import {DeserveBuying} from "../../api"
 
     export default {
@@ -118,7 +117,6 @@
             const result = await DeserveBuying()
             if (result.code === 0) {
                 this.data = result.data
-                console.log(this.data);
             }0
             this.$nextTick(() => {
                 this.data.shops.forEach((item,index) => {
@@ -131,12 +129,8 @@
         },
         computed: {
             promotions() {
-                console.log(this.data.promotions.slice(0, 6));
                 return this.data.promotions.slice(0, 6)
             }
-        },
-        components: {
-            PageHeader
         }
     }
 </script>

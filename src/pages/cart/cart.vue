@@ -1,6 +1,6 @@
 <template>
 <div class="cartAll">
-  <Header> </header>
+    <AllPagesHeader title="购物车"/>
       <!-- 购物车显示开始 -->
   <div class="cartContainer_second"  v-if="count>0" >
     <!-- 编辑头部 -->
@@ -30,7 +30,7 @@
           <div class="book_count">
             <span>x{{count}}</span>
             <button @click="compileConChange"><i class="iconfont icon-xiugai"></i></button>
-          </div>  
+          </div>
         </div>
       </div>
       <div class="compile_content_check" v-else>
@@ -64,9 +64,9 @@
       </div>
       <div class="footer_right">
         <span>结算（{{count}}）</span>
-        <span  class="footer_price">合计: ￥{{detail.new_price.price_1*count}}元</span> 
+        <span  class="footer_price">合计: ￥{{detail.new_price.price_1*count}}元</span>
       </div>
-       
+
      </footer>
      <!-- 底部导航条结束 -->
   </div>
@@ -83,16 +83,16 @@
     </div>
   </div>
    <!-- 空购物车显示结束 -->
-   
+
 </div>
 </template>
 
 <script type="text/ecmascript-6">
 import {mapState} from 'vuex'
-import Header from '../../components/header/header'
+import PagesHeader from '../../components/pagesHeader/pagesHeader'
   export default {
     components:{
-      Header 
+        PagesHeader
     },
     data() {
       return {
@@ -104,7 +104,6 @@ import Header from '../../components/header/header'
     methods: {
       compileChange(){
         this.isChange=!this.isChange
-
       },
       compileConChange(){
         this.isShow=!this.isShow
@@ -127,35 +126,44 @@ import Header from '../../components/header/header'
             }).catch(() => {
               // on cancel
             })
-            
-           
-      
           }
-       
-  
-    
     },
     computed: {
-      ...mapState(["count"]),
-      ...mapState(["countH"]),
-       ...mapState(["detail"]),
-          
+      ...mapState(["count","countH","detail"])
     },
   }
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus" scoped>
+@import "../../commen/stylus/mixins.styl"
+.header-top
+    display flex
+    height 44px
+    justify-content space-between
+    bottom-border-1px(#999)
+    .topContent
+        font-size 18px
+        line-height 44px
+    span
+        padding 0 10px
+        line-height 44px
+    .fanhui
+        margin-right 8px
+        font-size 16px
+    .icon-more
+        font-size 24px
+
 .cartAll
   background-color #eeeeee
   width 100%
-  height 100%
-  
+  height 80%
+
   .cartContainer
     background-color #F2F2F2
     width 100%
-    height calc(100vh)
-    
-    
+    height 93.463vh
+
+
     //position relative
     img
       //position absolute
@@ -185,7 +193,7 @@ import Header from '../../components/header/header'
   .cartContainer_second
     //display none
     width 100%
-    padding-top 50px
+    /*padding-top 50px*/
   .compile
     display flex
     width 100%
@@ -201,13 +209,13 @@ import Header from '../../components/header/header'
       width 75%
       img
         width 20px
-        vertical-align middle 
+        vertical-align middle
     .complite_dangdang
-      width 32px 
+      width 32px
       height 25px
       vertical-align middle
       margin 0 10px
-    .complite_text 
+    .complite_text
       vertical-align middle
       font-size 16px
       color #7B7B7B
@@ -228,7 +236,7 @@ import Header from '../../components/header/header'
         color white
         margin-left 15px
         padding 2px
-      .content_top_right 
+      .content_top_right
         overflow hidden
         width 150px
         white-space nowrap
@@ -239,7 +247,7 @@ import Header from '../../components/header/header'
           margin-left 5px
     .compile_content_img
       display flex
-      margin 15px 
+      margin 15px
       .compile_content_img-left
         width 20px
         height 20px
@@ -251,7 +259,7 @@ import Header from '../../components/header/header'
         width 50%
         margin-left 20px
         .main_price_div
-          margin 15px 
+          margin 15px
           font-size 16px
           color red
           .main_price_delete
@@ -260,7 +268,7 @@ import Header from '../../components/header/header'
         .book_count
           margin 15px
           font-size 16px
-          display flex 
+          display flex
           justify-content space-between
           button
             border 0
@@ -270,7 +278,7 @@ import Header from '../../components/header/header'
             i
               font-size 20px
     .compile_content_check
-      display  flex 
+      display  flex
       justify-content space-around
       .compile_content_check_count
         display flex
@@ -286,8 +294,8 @@ import Header from '../../components/header/header'
             outline none
             border 1px solid #EFEFEF
             width 45px
-            heigth 48px 
-          input 
+            heigth 48px
+          input
             //display inline-block
             width 80px
             font-size 20px
@@ -303,15 +311,15 @@ import Header from '../../components/header/header'
           margin-left 80px
           i
             font-size 20px
-      button 
+      button
         border 0
         background-color transparent
         outline none
         border 1px solid #EFEFEF
-        background-color #eee  
+        background-color #eee
     .special
       .special_left
-        color red 
+        color red
         font-size 14px
         border 1px solid red
         border-radius 5px
@@ -335,9 +343,9 @@ import Header from '../../components/header/header'
     justify-content space-between
     position absolute
     bottom 0px
-    left 0px 
+    left 0px
     height 50px
-    background-color white 
+    background-color white
     width 100%
     line-height 50px
     img
@@ -352,7 +360,7 @@ import Header from '../../components/header/header'
       color #4d525d
       vertical-align middle
     .footer_right
-        span 
+        span
           padding 0 10px
           height 50px
           font-size 17px

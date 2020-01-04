@@ -1,4 +1,4 @@
-/* 
+/*
 包含n个用于间接更新状态数据的方法的对象
 方法可以包含异步和逻辑处理代码
 */
@@ -16,8 +16,8 @@ import {
 } from './mutation-types'
 
 export default {
- 
-	/* 
+
+	/*
 	保存用户
 	*/
 	saveUser ({commit}, user) {
@@ -33,7 +33,7 @@ export default {
 		commit(RECEIVE_TOKEN, {token})
 	},
 
-	/* 
+	/*
 	自动登陆的异步action
 	*/
 	async autoLogin ({commit, state}) {
@@ -53,11 +53,10 @@ export default {
 		commit(RESET_USER)
 		commit(RESET_TOKEN)
 	},
-	
+
 
 	async getDetailInfo({commit}){
 		const result = await getDetail()
-		console.log(result);
 		commit('setDetailInfo',result.data)
 	},
 }

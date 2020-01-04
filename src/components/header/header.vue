@@ -1,14 +1,12 @@
 <template>
-
-    <ul > 
-      <li @click="$router.push('/msite')"><i class='iconfont icon-back'></i></li>
-      <li><router-link to='/goods'>商品</router-link></li>
-      <li><router-link to='/detail'>详情</router-link></li>
-      <li><router-link to='/comment'>评论</router-link></li>
-      <li><router-link to='/recommend'>推荐</router-link></li>
-      <li><i class='iconfont icon-more'></i></li>
+    <ul >
+        <li @click="$router.push('/msite')"><i class='iconfont icon-back'></i></li>
+        <li><router-link to='/goods'>商品</router-link></li>
+        <li><router-link to='/detail'>详情</router-link></li>
+        <li><router-link to='/comment'>评论</router-link></li>
+        <li><router-link to='/recommend'>推荐</router-link></li>
+        <li><i class='iconfont icon-more'></i></li>
     </ul>
-
 </template>
 
 <script type="text/ecmascript-6">
@@ -35,12 +33,12 @@
         font-size 14px
         color color #8E9A9B
         padding 10px 10px 0 10px
-        i 
+        i
           font-size 17px
-          color #3c3c3c 
+          color #3c3c3c
         .router-link-active
           padding 14px 0
           border-bottom 1px solid  #02a774
           color #02a774
- 
+
 </style>

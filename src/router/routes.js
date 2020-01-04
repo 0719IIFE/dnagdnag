@@ -20,6 +20,9 @@ import Comment from '../pages/comment/comment.vue'
 import Shop from '../pages/Sweater/Shop.vue'
 import Lyh from '../pages/Sweater/liuyanhu.vue'
 
+//test
+// import AllHeader from "../components/allPagesHeader/allPagesHeader"
+
 export default [
     {
         path:'/msite',

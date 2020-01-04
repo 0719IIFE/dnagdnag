@@ -5,6 +5,7 @@ import {Button} from 'mint-ui'
 import 'lib-flexible'
 import * as API from '@/api'
 import store from './store/store'
+import AllPagesHeader from "./components/allPagesHeader/allPagesHeader"
 import './validate'
 import { Picker } from 'vant';
 import { Popup } from 'vant';
@@ -35,7 +36,8 @@ Vue.use(Picker);
 Vue.config.productionTip = false
 Vue.prototype.$API = API
 
-Vue.component(Button.name, Button) 
+Vue.component(Button.name, Button)
+Vue.component("AllPagesHeader",AllPagesHeader)
 
 new Vue({
   render: h => h(App),
