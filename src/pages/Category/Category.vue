@@ -1,65 +1,6 @@
 <template>
   <div id="categoryContainer">
-    <!-- 头部 -->
-    <header>
-
-      <!-- 返回按钮 -->
-      <span @click="goto('/msite')">
-        <i class="iconfont icon-back"></i>
-      </span>
-
-      <!-- 搜索框 -->
-      <div class="search">
-        <!-- 搜索图标 -->
-        <span> 
-          <i class="iconfont icon-sousuo"></i>
-        </span>
-        <!-- 搜索框 -->
-        <input type="text" placeholder="搜索商品/种类/店铺" @focus="handleSearch"/>
-      </div>
-
-      <!-- 右侧文字 动态切换 -->
-      <span v-if="isSearch">搜索</span>
-      <span class="sandian" @click="handleGuide" v-if="!isSearch && !showGuide">
-        <i class="iconfont icon-sandian"></i>
-      </span>
-      <span v-if="showGuide" @click="handleGuide"><i class="iconfont icon-ziyuan1"></i></span>
-
-      <!-- 点击三点,显示导航 -->
-      <div class="footer_guide" v-if="showGuide">
-        <span class="guide_item" :class="{on: '/msite'===$route.path}" @click="goto('/msite')">
-          <span>
-            <i class="iconfont icon-xuanzhongshangcheng"></i>
-          </span>
-          <span>首页</span>
-        </span>
-        <span class="guide_item" @click="goto('/category')">
-          <span>
-            <i class="iconfont icon-mulu"></i>
-          </span>
-          <span>分类</span>
-        </span>
-        <span class="guide_item" :class="{on: '/deserveBuying'===$route.path}" @click="goto('/deserveBuying')">
-          <span>
-            <i class="iconfont icon-bao"></i>
-          </span>
-          <span>值得买</span>
-        </span>
-        <span class="guide_item" @click="goto('/shopcart')">
-          <span class="item_icon">
-            <i class="iconfont icon-gouwuche2"></i>
-          </span>
-          <span>购物车</span>
-        </span>
-        <span class="guide_item" @click="goto('/profile')" :class="{on: '/profile'===$route.path}">
-          <span class="item_icon">
-            <i class="iconfont icon-person"></i>
-          </span>
-          <span>我的当当</span>
-        </span>
-      </div>
-    </header>
-
+    <AllPagesHeader/>
     <!-- 内容区,动态显示 -->
     <div class="navContainer" v-if="!isSearch && allCategoryObj" :class="{searchDown:showGuide}">
       <!-- 左侧导航列表 -->
@@ -130,15 +71,23 @@
                 <div class="fictionContainer" v-if="item.style_type == 1">
                   <div class="fictionHeader">
                     <span class="fictionHeaderLeft bookTitle">{{item.group_name}} ></span>
-                    <span class="fictionHeaderRight">{{item.more}} ></span>
+                    <span class="fictionHeaderRight" @click="goto('/library')">{{item.more}} ></span>
                   </div>
 
                   <div class="fictionUpContent">
-                    <ul class="upList">
-                      <li v-for="(i,index) in item.detail" :key="index" v-show="index < 5">{{i.title}}</li>
-                      <li v-for="(i,index) in item.detail" :key="index + 'second'" v-show="item.isShowSec && index > 5">{{i.title}}</li>
-                      <li class="fold" @click="toggleUnfold(item)">
-                        {{item.isShowSec ? '收起': '查看更多'}}
+                    <ul class="upList" v-if="!item.show">
+                      <li v-for="(i,index) in item.detail" :key="index" v-show="index < 5"><p>{{i.title}}</p></li>
+                      <li class="fold" @click="toggleUnfold(item,true)">
+                        <p>查看更多</p>
+                        <span>
+                          <i class="iconfont icon-zhankai"></i>
+                        </span>
+                      </li>
+                    </ul>
+                    <ul class="upList" v-if="item.show">
+                      <li v-for="(i,index) in item.detail" :key="index"><p>{{i.title}}</p></li>
+                      <li class="fold" @click="toggleUnfold(item,false)">
+                        <p>收起</p>
                         <span>
                           <i class="iconfont icon-zhankai"></i>
                         </span>
@@ -150,7 +99,7 @@
                 <div class="booksContainer" v-if="item.style_type == 3">
                   <div class="fictionHeader">
                     <span class="fictionHeaderLeft bookTitle">{{item.group_name}} ></span>
-                    <span class="fictionHeaderRight">{{item.more}} ></span>
+                    <span class="fictionHeaderRight" @click="goto('/library')">{{item.more}} ></span>
                   </div>
                   <div class="boonsContent">
                     <p v-for="(Ditem,index) in item.detail" :key="index">{{Ditem.title}}</p>
@@ -162,7 +111,7 @@
         </div>
       </div>
     </div>
-    
+
     <!-- 搜索区展示 -->
     <div class="mask" v-if="isSearch">
       <!-- 搜索展示的头部 -->
@@ -184,7 +133,7 @@
       <!-- 空白区域 -->
       <!-- <div class="blank"></div> -->
     </div>
-    
+
   </div>
 </template>
 
@@ -193,7 +142,7 @@ import Swiper from "swiper"
 import "swiper/css/swiper.css"
 import BScroll from "better-scroll"
 import { reqCategory } from "../../api/index"
-export default { 
+export default {
   data () {
     return {
       allCategoryObj: [],
@@ -225,19 +174,8 @@ export default {
     })
   },
   methods: {
-    toggleUnfold(item) {
-      // this.allCategoryObj[0].content.pile[0].group.forEach((item,i) =>
-      //   item.__id = i
-      // })
-      // console.log(this.allCategoryObj[0].content.pile[0].group[index].__id === index)
-      // console.log(this.allCategoryObj[0].content.pile[0].group,index)
-      if(!item.isShowSec) {
-        this.$set(item,'isShowSec',false)
-        item.isShowSec = !item.isShowSec
-      } else {
-        item.isShowSec = !item.isShowSec
-      }
-      this.showList = !this.showList
+    toggleUnfold(item,flag) {
+      this.$set(item,'show',flag)
     },
     handleClick(index) {
       //根据下标获取当前对象
@@ -290,17 +228,17 @@ export default {
 </script>
 
 <style scoped lang="stylus" rel="stylesheet/stylus">
-#categoryContainer 
-  header 
+#categoryContainer
+  header
     width 100%
     height 45px
     display flex
     line-height 45px
     position relative
-    span 
+    span
       font-size 14px
       margin-left 5px
-      .iconfont 
+      .iconfont
         width 36px
         height 30px
         font-size 20px
@@ -308,7 +246,7 @@ export default {
       .icon-ziyuan1
         font-size 16px
         color red
-    .search 
+    .search
       width 280px
       height 30px
       line-height 30px
@@ -317,13 +255,13 @@ export default {
       overflow hidden
       background-color #eee
       position relative
-      span 
+      span
         position absolute
         left 0
         top 0
-        .iconfont 
+        .iconfont
           font-size 12px
-      input 
+      input
         width 245px
         height 100%
         margin-left 30px
@@ -333,7 +271,6 @@ export default {
         padding-left 5px
     .footer_guide
       border-top 1px solid #eee
-      z-index -1
       display flex
       position absolute
       top 45px
@@ -361,7 +298,7 @@ export default {
   .searchDown
     margin-top 50px
     transition all 0.5s
-  .navContainer 
+  .navContainer
     background-color #eff4fa
     border-top 1px solid #eee
     transition all 0.5s
@@ -370,22 +307,22 @@ export default {
       font-size 13px
       font-weight bold
 
-    .wrapperLeft 
+    .wrapperLeft
       width 80px
       float left
-      .allCategoryObj 
+      .allCategoryObj
         width 80px
-        height 1457px
+        height 1410px
         background-color #eff4fa
-        li 
+        li
           width 100%
           height 47px
           background-color #fff
-          &.on 
+          &.on
             background-color #eff4fa
-            a 
+            a
               color red
-          a 
+          a
             display block
             width 100%
             height 100%
@@ -393,26 +330,26 @@ export default {
             text-align center
             line-height 47px
     .wrapper 
-      height 620px
+      height 575px
       overflow hidden
-      .rightNav 
+      .rightNav
         float left
         width 286px
         max-height 8500px
         padding-left 9px
         background-color #eff4fa
-        .navImg 
+        .navImg
           width 286px
           height 102p
-          img 
+          img
             width 100%
             height 100%
-        .miniBanner 
+        .miniBanner
           height 69px
           display flex
           justify-content space-between
-
-          .mini_bannner 
+          overflow hidden
+          .mini_bannner
             width 92px
             height 40px
             line-height 15px
@@ -422,15 +359,15 @@ export default {
             margin-right 1px
             position relative
             overflow hidden
-            &.allWidth 
+            &.allWidth
               width 100%
-            h3 
+            h3
               font-size 15px
               font-weight bold
               margin-bottom 6px
-            p 
+            p
               color #8e8e8e
-            .iconfont 
+            .iconfont
               position absolute
               top 0
               right 0
@@ -439,63 +376,70 @@ export default {
               line-height 60px
               text-align center
               font-size 20px
-          .mini_right 
+          .mini_right
             margin-left 5px
-        .bookListContainer 
+      .hasImgContainer
+        margin-top 10px
+        .bookListContainer
           width 286px
-          min-height 180px
+          min-height 120px
           background-color white
           margin-top 10px
           overflow hidden
-          .booksList 
-            li 
+          .booksList
+            li
               float left
               width 80px
               height 114px
-              padding 25px 6px 2px 6px
-              img 
+              padding 15px 6px 2px 6px
+              img
                 width 68px
                 height 68px
-              p 
+              p
                 font-size 12px
                 text-align center
                 line-height 25px
                 color #8e8e8e
-        .fictionContainer 
+        .fictionContainer
           width 286px
           margin-top 10px
           background-color #fff
-          .fictionHeader 
+          .fictionHeader
             box-sizing border-box
             width 100%
             height 35px
-            .fictionHeaderLeft 
+            .fictionHeaderLeft
               float left
-            .fictionHeaderRight 
+            .fictionHeaderRight
               float right
               margin-right 14px
               margin-top 7px
-              color #8e8e8e 
-          .fictionUpContent 
+              color #8e8e8e
+          .fictionUpContent
             width 286px
-            min-height 98px
+            min-height 49px
             .upList 
               // height 98px
               overflow hidden
               position relative
               display flex
               flex-wrap wrap
-              justify-content flex-end
+              justify-content space-between
               padding 0 14px
-              li 
+              li
                 width 33.3333%
-                height 48px
+                height 44px
                 text-align center
-                line-height 48px
-                overflow hidden
+                vertical-align middle
                 border-bottom 1px solid #eee
+                display flex
+                align-items center
                 position relative
-                &:after 
+                p
+                  width 100%
+                  font-size 13px
+                  text-align center
+                &:after
                   content ''
                   width 1px
                   height 14px
@@ -504,52 +448,53 @@ export default {
                   top 50%
                   right 0
                   margin-top -7px
-              li:nth-of-type(3n):after 
+              li:nth-of-type(3n):after
                 width 0
-              li:last-childafter 
+              li:last-child:after
                 width 0
-              .unfold, .fold 
+              .unfold, .fold
                 color #bababa
-                .iconfont 
+                text-align center
+                .iconfont
                   font-size 12px
-        .booksContainer 
+        .booksContainer
           width 286px
           margin-top 10px
           background-color #fff
-          .fictionHeader 
+          .fictionHeader
             box-sizing border-box
             width 100%
             height 35px
-            .fictionHeaderLeft 
+            .fictionHeaderLeft
               float left
-            .fictionHeaderRight 
+            .fictionHeaderRight
               float right
               margin-right 14px
               margin-top 7px
               color #8e8e8e
-          .boonsContent 
-            p 
+          .boonsContent
+            p
               width 259px
               height 48px
               line-height 48px
               padding-left 10px
               color #4d525d
               border-bottom 1px solid #eee
-  .mask 
+  .mask
     background-color #eee
     overflow hidden
-    header 
+    header
       width 80%
       height 40px
       color #646464
       font-size 14px
       line-height 40px
-      .iconfont  
+      .iconfont
         font-size 16px
       .title
         margin-left -8px
     section
-      span 
+      span
         display block
         float left
         min-width 50px
@@ -562,6 +507,6 @@ export default {
         margin-left 10px
         margin-bottom 10px
         padding 0 10px
-      
+
 
 </style>

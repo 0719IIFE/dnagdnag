@@ -1,6 +1,6 @@
 <template>
     <div class="header-top">
-        <span><i class="iconfont icon-fanhui"></i></span>
+        <span><i class="iconfont icon-fanhui" @click="$router.push('/msite')"></i></span>
         <div class="topContent">{{title}}</div>
         <span><i class="iconfont icon-more"></i></span>
     </div>

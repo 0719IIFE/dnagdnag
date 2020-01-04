@@ -1,12 +1,6 @@
 <template>
   <section class="profile">
-    <header class="header">
-      <i class="iconfont icon-fanhui"></i>
-      <div class="header_title">
-        <span class="header_title_text">我的当当</span>
-      </div>
-      <i class="iconfont icon-more"></i>
-    </header>
+      <AllPagesHeader title="我的当当"/>
     <section class="content" v-if="itemDatas.personalList">
       <section class="user-basic" tag="div">
         <router-link to="/login" class="table" v-if="!user._id">
@@ -137,7 +131,7 @@
   import Datas from './datas/datas.json'
   import {mapState} from 'vuex'
   import {MessageBox} from 'mint-ui'
-  export default { 
+  export default {
     data() {
       return {
         itemDatas:{},
@@ -148,9 +142,7 @@
       this.itemDatas = Datas
     },
     computed: {
-      ...mapState({
-        user: state => state.user.user
-      })
+      ...mapState(['user'])
     },
     methods: {
       logout () {
@@ -171,34 +163,12 @@
   @import "../../commen/stylus/mixins.styl"
   .profile //我的
     width 100%
-    .header //头部公共css
-      display flex
-      justify-content space-between
-      position fixed                                                                                                                                                                                                                                         
-      z-index 100
-      left 0
-      top 0
-      width 100%
-      height 44px
-      padding 0 10px
-      box-sizing border-box
-      background-color #fff
-      .iconfont
-        font-size 16px
-        line-height 44px
-      .header_title
-        width 30%
-        color #333
-        font-size 17px
-        text-align center
-        line-height 44px
     .user-basic
       position relative
       width 100%
       height 115px
-      background-image url('./imgs/user-bg.jpg') 
-      background-size cover 
-      margin-top 44px
+      background-image url('./imgs/user-bg.jpg')
+      background-size cover
       .table
         width 100%px
         height 39px
@@ -245,8 +215,8 @@
             font-size 12px
             line-height 30px
 
-            
-       
+
+
     .userStat
       display flex
       div
@@ -272,12 +242,12 @@
           font-size 22px
           line-height 46px
           margin 0 10px
-        span 
+        span
           font-size 14px
           color #000
       .right
         float right
-        span 
+        span
           font-size 12px
           line-height 46px
           color #000
@@ -310,7 +280,7 @@
           font-size 22px
           line-height 46px
           margin 0 10px
-        span 
+        span
           font-size 14px
           line-height 46px
           color #000
@@ -323,7 +293,7 @@
     .myList
       width 100%-20px
       height 27px
-      padding 10px 
+      padding 10px
       border-bottom 1px solid #eee
       .left
         float left
@@ -349,7 +319,7 @@
       margin-bottom 50px
       .info
         display inline-block
-      span 
+      span
         font-size 14px
         line-height 44px
         margin-left 20px

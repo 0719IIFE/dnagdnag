@@ -1,7 +1,8 @@
 <template>
     <div class="discountBookContainer" v-if="data">
         <header>
-            <PageHeader title="特卖专区"/>
+            <!-- <PageHeader title="特卖专区"/> -->
+            <AllPagesHeader title="特卖专区"/>
 
             <div class="searchContainer">
                 <div class="inputContainer">
