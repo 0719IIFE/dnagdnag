@@ -11,7 +11,7 @@
       <div class="left">
         <img src="http://img62.ddimg.cn/upload_img/00742/123/youbian-1541766952.png" alt="">
       </div>
-    </div>  
+    </div>
     <!-- 隐藏部分 -->
     <div class = 'componentToSeacher' v-show = 'sectionSearch'>
       <div class = 'header'>
@@ -54,7 +54,7 @@
       </div>
     </div>
 
-    <div class="first" v-show = '!sectionSearch'>  
+    <div class="first" v-show = '!sectionSearch'>
       <!-- 头部的输入框+logo -->
       <div class = 'header'>
         <h1 class = 'logo'>
@@ -71,7 +71,7 @@
         <div class = 'iconMenu' @click = "$router.push('/category')">
           <i class = 'iconfont icon-mulu'></i>
         </div>
-      </div>    
+      </div>
       <!-- 轮播-->
       <a href="http://shop.m.dangdang.com/7733.html?t=1578070523">
           <div class="swiper-container">
@@ -87,7 +87,9 @@
       <!-- 十个商品列表 -->
       <ul class="shopList">
         <li class="shopItem" @click="handleClick(index)" v-for="(p,index) in picture.swiper_list" :key = 'index'>
-          <img :src="p.imgUrl" alt="">
+            <a :href="p.path ? p.path : p.linkUrl">
+                <img :src="p.imgUrl" alt="">
+            </a>
         </li>
       </ul>
       <!-- 中间的1px的分割线 -->
@@ -114,7 +116,7 @@
                           <span class="text">秒</span>
                         </template>
                       </van-count-down>
-                    </span> 
+                    </span>
                   </span>
                 </span>
                 <!-- 秒杀列表 -->
@@ -189,7 +191,7 @@
               </div>
               <div class="empty"></div>
             </div>
-          
+
       <!-- 服装鞋包 -->
           <div class="clothesAndBag">
             <!-- 上面文字部分 -->
@@ -447,13 +449,13 @@
             <span>告</span>
             <span>x</span>
           </div>
-      <!-- 红包雨 -->   
+      <!-- 红包雨 -->
           <div class="rBR">
             <div class="redBagRain"  v-for = '(rb,index) in redBagRain.data.hongbaoyu.activity_list' :key = 'index' @click = "$router.push('/red_bag_rain')">
                 <img :src="rb.icon_h5" alt="">
             </div>
-          </div>   
-      <!-- 到顶部 -->    
+          </div>
+      <!-- 到顶部 -->
         <a href = '#top' class="switchTop">
           <img src="http://touch.m.dangdang.com/images/go-top.png" alt="">
         </a>
@@ -492,10 +494,10 @@ export default {
         this.seckilledDatas = result.data.productsInfo
       }
       this.datas = await reqHome()
-      
+
       this.picture = await reqPicture()
       console.log(this.picture)
-      
+
       this.redBagRain = await reqRedBagRain()
 
       this.$nextTick(() => {
@@ -518,8 +520,8 @@ export default {
         if(index == 5){
           this.$router.push('/clothing')
         }
-        
-        }  
+
+        }
       },
       isClose(){
           this.$refs.beClosedAdver.remove()
@@ -537,7 +539,7 @@ export default {
           document.querySelector('.redBagRain').style.top = '100px';
         }
       }, */
-    
+
   /*   destroyed () {//离开该页面需要移除这个监听的事件
       window.removeEventListener('scroll', this.handleScroll)
     } */
@@ -587,7 +589,7 @@ export default {
         width 70%
         height 68%
         margin 12%   auto
-        box-sizing border-box      
+        box-sizing border-box
     .search
       width 78%
       height 25px
@@ -631,7 +633,7 @@ export default {
   .componentToSeacher
     width 100%
     height 100%
-    .header 
+    .header
       width 100%
       height 45px
       background-color white
@@ -640,16 +642,16 @@ export default {
         text-align center
         width 11%
         height 100%
-        .iconfont  
+        .iconfont
           font-size 26px
           height 45px
           line-height 45px
-          color #646464   
+          color #646464
       .search
         height 30px
         line-height 30px
         margin auto 0
-        .searchContainer 
+        .searchContainer
           .searchContent
           ::placeholder
             color #b5bec5
@@ -693,7 +695,7 @@ export default {
           color #464646
           font-size 13px
           text-align center
-          background-color white      
+          background-color white
 
 
   .swiper-container
