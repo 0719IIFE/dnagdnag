@@ -130,7 +130,7 @@
                 <div class="fictionContainer" v-if="item.style_type == 1">
                   <div class="fictionHeader">
                     <span class="fictionHeaderLeft bookTitle">{{item.group_name}} ></span>
-                    <span class="fictionHeaderRight">{{item.more}} ></span>
+                    <span class="fictionHeaderRight" @click="goto('/library')">{{item.more}} ></span>
                   </div>
 
                   <div class="fictionUpContent">
@@ -158,7 +158,7 @@
                 <div class="booksContainer" v-if="item.style_type == 3">
                   <div class="fictionHeader">
                     <span class="fictionHeaderLeft bookTitle">{{item.group_name}} ></span>
-                    <span class="fictionHeaderRight">{{item.more}} ></span>
+                    <span class="fictionHeaderRight" @click="goto('/library')">{{item.more}} ></span>
                   </div>
                   <div class="boonsContent">
                     <p v-for="(Ditem,index) in item.detail" :key="index">{{Ditem.title}}</p>
@@ -234,20 +234,7 @@ export default {
   },
   methods: {
     toggleUnfold(item,flag) {
-      // this.allCategoryObj[0].content.pile[0].group.forEach((item,i) =>
-      //   item.__id = i
-      // })
-      // console.log(this.allCategoryObj[0].content.pile[0].group[index].__id === index)
-      // console.log(this.allCategoryObj[0].content.pile[0].group,index)
       this.$set(item,'show',flag)
-      // item.show = flag
-      // if(!item.isShowSec) {
-      //   this.$set(item,'isShowSec',false)
-      //   item.isShowSec = !item.isShowSec
-      // } else {
-      //   item.isShowSec = !item.isShowSec
-      // }
-      // this.showList = !this.showList
     },
     handleClick(index) {
       //根据下标获取当前对象

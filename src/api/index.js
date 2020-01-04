@@ -44,3 +44,12 @@ export const reqClothing = () => ajax.get("/clothing")
 
 //异步获取分类列表的数据
 export const reqCategory = () => ajax.get("/category")
+
+//图书列表
+export const reqLibrary = () => ajax.get("/battle")
+//商店
+export const reqShop = () => ajax.get("/shangDian")
+//新品
+export const reqCommon = () => ajax.get("/maoYi")
+//新品  
+export const reqRight = () => ajax.get("/niu")

@@ -241,7 +241,7 @@
     <br/>
     <br/>
     <br/>
-    <Footer></Footer>
+    <Footer :countI="countI"></Footer>
   </div>
   <div class="shade">
     <transition name="fade">
@@ -282,7 +282,7 @@ import areaList from "../../assets/area";
     return {
       value: '',
       showPicker: false,
-      countI:0,
+      countI:1,
       show:false,
         areaList,
       //searchResult: [],
@@ -317,7 +317,13 @@ import areaList from "../../assets/area";
       this.showAll=!this.showAll
 
    },
-         add: function() {this.countI=++this.countI;
+         add: function() {
+           if (this.countI === 0) {
+             this.countI = 1
+           }else{
+             this.countI++
+           }
+           
           this.$store.commit("updateCount",this.countI)},
          subtract: function() {if (this.countI <= 0) {this.$toast('不能再少了')} else {this.countI=--this.countI;
           this.$store.commit("updateCount",this.countI)}}
@@ -341,7 +347,6 @@ import areaList from "../../assets/area";
     },
      computed: {
       ...mapState(["detail"]),
-      ...mapState(["countI"]),
       ...mapState(["review_list"]),
 
       showList:function(){

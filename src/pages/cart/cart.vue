@@ -38,7 +38,7 @@
         <div class="compile_content_check_count">
           <section >
             <button v-on:click="subtract(countH)">-</button>
-            <input type="text" value="0" v-model="countH">
+            <input type="text" value="0" v-model="count">
             <button v-on:click="add(countH)">+</button>
           </section>
           <button class="button_icon" @click="handleClick"><i class="iconfont icon-iconset0212"></i></button>

@@ -5,13 +5,20 @@ import DeserveBuying from '../pages/DeserveBuying/DeserveBuying.vue'
 import ShopCart from '../pages/ShopCart/ShopCart.vue'
 import Login from '@/pages/Login/Login'
 import Profile from '@/pages/Profile/Profile'
+import Clothing from '../components/Clothing/Clothing.vue'
+
+import TeJiaShuShi from "../pages/teJiaShuShi/teJiaShuShi.vue"
+import JinRiCuXiao from "../pages/jinRiCuXiao/jinRiCuXiao.vue"
+import Sweater from '../pages/Sweater/Sweater.vue'
+import Library from '../pages/Library/Library'
 import RedBagRain from '@/pages/RedBagRain/RedBagRain'
 import Goods from '@/pages/goods'
 import Cart from '@/pages/cart/cart'
 import Detail from '@/pages/detail/detail'
 import Recommend from '@/pages/recommend/recommend'
-import Clothing from '../components/Clothing/Clothing.vue'
 import Comment from '../pages/comment/comment.vue'
+import Shop from '../pages/Sweater/Shop.vue'
+import Lyh from '../pages/Sweater/liuyanhu.vue'
 
 export default [
     {
@@ -54,6 +61,14 @@ export default [
         }
     },
     {
+        path:'/jinRiCuXiao',
+        component:JinRiCuXiao
+    },
+    {
+        path:'/teJiaShuShi',
+        component:TeJiaShuShi
+    },
+    {
         path:'/red_bag_rain',
         component:RedBagRain
     },
@@ -80,6 +95,24 @@ export default [
        {
         path:'/comment',
         component:Comment,
+    },
+    {
+        path:'/library',
+        component:Library
+    },
+    {
+        path:'/sweater',
+        component:Sweater,
+        children:[
+            {
+                path:'/sweater/shop',
+                component:Shop
+                },
+            {
+                path:'/sweater/Lyh',
+                component:Lyh
+            }
+        ]
     },
     {
         path:'/',

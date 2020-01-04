@@ -87,6 +87,7 @@ export default {
         height 53px
         display flex
         background-color white
+        z-index 100
         .icon-houtui
             width 48px
             height 100%
