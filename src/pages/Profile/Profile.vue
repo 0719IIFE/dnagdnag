@@ -3,9 +3,9 @@
       <AllPagesHeader title="我的当当"/>
     <section class="content" v-if="itemDatas.personalList">
       <section class="user-basic" tag="div">
-        <router-link to="/login" class="table" v-if="!user._id">
+        <router-link to="/login" class="table" v-if="!token">
         <div class="loginContent">
-          <span>登录/注册</span>
+            <span>登录/注册</span>
         </div>
         </router-link>
         <div class="personal-link" v-else>
@@ -111,7 +111,7 @@
       </section>
     </section>
     <section class="loginTo" tag="div">
-      <div v-if="user._id" class="info">
+      <div v-if="token" class="info">
         <span>{{user.name?user.name:user.phone}}</span>
         <span @click="logout">退出</span>
       </div>
@@ -142,7 +142,7 @@
       this.itemDatas = Datas
     },
     computed: {
-      ...mapState(['user'])
+      ...mapState(['user',"token"])
     },
     methods: {
       logout () {

@@ -19,7 +19,7 @@ instance.interceptors.request.use((config)=> {
         config.data = qs.stringify(data)
     }
     // 5. 通过请求头携带token数据
-    const token = store.state.user.token;
+    const token = store.state.token;
     // 有token就携带
     if(token){
         config.headers['Authorization'] = token;
@@ -73,11 +73,11 @@ instance.interceptors.response.use(
           MessageBox('提示', '请求出错: ' + error.message)
         }
       }
-  
-      
-  
+
+
+
       // return Promise.reject(error)
-     
+
       return new Promise(() => {}) // 返回一个pending状态的promise => 中断promie链
     }
   )
