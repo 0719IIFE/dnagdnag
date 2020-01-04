@@ -508,7 +508,6 @@
             this.datas = await reqHome()
 
             this.picture = await reqPicture()
-            console.log(this.picture)
 
             this.redBagRain = await reqRedBagRain()
 

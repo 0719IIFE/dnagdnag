@@ -1,44 +1,6 @@
 <template>
     <div class = 'redBag'>
-        <div class= 'header'> 
-            <i class = 'iconfont icon-houtui' @click = "$router.back('/msite')"></i>
-            <span class = 'text'>红包雨召唤</span>
-            <div class = 'openSwitch' :class="{on : showFooter}" @click = "isShowFooter"></div>
-        </div>
-        <transition name = 'fade' mode = 'in-out'>
-            <div class="footer_guide" v-show = 'showFooter'>
-                <span class="guide_item"  @click="$router.push('/msite')">
-                    <span>
-                        <i class="iconfont icon-xuanzhongshangcheng"></i>
-                    </span>
-                    <span>首页</span>
-                </span>
-                <span class="guide_item" @click="$router.push('/category')">
-                    <span>
-                        <i class="iconfont icon-mulu"></i>
-                    </span>
-                    <span>分类</span>
-                </span>
-                <span class="guide_item"  @click="$router.push('/deserveBuying')">
-                    <span>
-                        <i class="iconfont icon-bao"></i>
-                    </span>
-                    <span>值得买</span>
-                </span>
-                <span class="guide_item" @click="$router.push('/cart')">
-                    <span class="item_icon">
-                        <i class="iconfont icon-gouwuche2"></i>
-                    </span>
-                    <span>购物车</span>
-                </span>
-                <span class="guide_item" @click="$router.push('/profile')">
-                    <span class="item_icon">
-                        <i class="iconfont icon-person"></i>
-                    </span>
-                    <span>我的当当</span>
-                </span>
-            </div>
-        </transition>
+        <AllPagesHeader title="红包雨召唤"/>
         <div class="main">
             <img class = 'outer' src="http://img63.ddimg.cn/upload_img/00459/h5/main_bg-1541586516.jpg" alt="">
                     <!-- 二维码 -->
@@ -82,7 +44,7 @@ export default {
 .redBag
     width 100%
     height 100%
-    .header 
+    .header
         width 100%
         height 53px
         display flex
@@ -107,7 +69,7 @@ export default {
             background-image url("http://touch.m.dangdang.com/coreimages/menu.png")
             background-repeat no-repeat
             background-position center center
-            background-size 27px 
+            background-size 27px
             &.on
                 width 48px
                 height 100%
@@ -115,7 +77,7 @@ export default {
                 background-repeat no-repeat
                 background-position center center
                 background-size 27px
-    .fade-enter-active, .fade-leave-active 
+    .fade-enter-active, .fade-leave-active
         transition all .5s
     .fade-enter, .fade-leave-to
         opacity 0
@@ -130,7 +92,7 @@ export default {
         height 61px
         padding 4px 0
         box-sizing border-box
-        background-color #fff 
+        background-color #fff
         .guide_item
             display flex
             flex-direction column
@@ -140,13 +102,13 @@ export default {
                 margin-top 4px
                 font-size 15px
                 .iconfont
-                    font-size 25px        
-  
-    .main    
+                    font-size 25px
+
+    .main
         width 100%
         height 580px
         position relative
-        .outer 
+        .outer
             display block
             width 100%
             height 100%
