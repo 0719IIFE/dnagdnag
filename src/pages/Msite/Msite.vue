@@ -492,14 +492,15 @@
         },
         async mounted() {
             window.addEventListener("scroll",() => {
-                let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-                if(scrollTop >= 1000){
-                    this.$refs.switchTop.style.display = "block"
-                } else {
-                    this.$refs.switchTop.style.display = "none"
+                if(this.$refs.switchTop){
+                    let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+                    if(scrollTop >= 1000){
+                        this.$refs.switchTop.style.display = "block"
+                    } else {
+                        this.$refs.switchTop.style.display = "none"
+                    }
                 }
             })
-
 
             let result = await reqSecKilled()
             if (result.code === 0) {
