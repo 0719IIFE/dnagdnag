@@ -3,15 +3,20 @@
       <keep-alive>
           <router-view/>
       </keep-alive>
-    <FooterGuide v-show="$route.meta.isShowFooter"/>
+    <FooterGuide v-show="$route.meta.isShowFooter && !$store.state.sectionSearch"/>
   </div>
 </template>
 <script>
 import FooterGuide from './components/FooterGuide/FooterGuide'
 export default {
-  components:{
-    FooterGuide
-  },
+    data(){
+        return {
+            sectionSearch:false
+        }
+    },
+      components:{
+        FooterGuide
+      },
   async mounted () {
       // 通知action异步获取address并保存到state
       this.$store.dispatch('autoLogin')
