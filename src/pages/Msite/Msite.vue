@@ -18,17 +18,17 @@
         <span class='backIcon' @click="isShowSearch">
           <i class='iconfont icon-houtui'></i>
         </span>
-                <div class='search'>
-                    <div class='searchContainer'>
-                        <div class='searchIcon'>
-                            <i class='iconfont icon-search'></i>
-                        </div>
-                        <input class='searchContent' type='text' placeholder='儿童情绪管理'/>
+            <div class='search'>
+                <div class='searchContainer'>
+                    <div class='searchIcon'>
+                        <i class='iconfont icon-search'></i>
                     </div>
+                    <input class='searchContent' type='text' placeholder='儿童情绪管理'/>
                 </div>
-                <div class='iconMenu' @click="$router.push('/category')">
-                    <i class='iconfont'>搜索</i>
-                </div>
+            </div>
+            <div class='iconMenu' @click="$router.push('/category')">
+                <i class='iconfont'>搜索</i>
+            </div>
             </div>
             <div class="contentInner">
                 <p class='hotSearch'>
@@ -86,7 +86,7 @@
             </a>
             <!-- 十个商品列表 -->
             <ul class="shopList">
-                <li class="shopItem" @click="handleClick(index)" v-for="(p,index) in picture.swiper_list" :key='index'>
+                <li class="shopItem" v-for="(p,index) in picture.swiper_list" :key='index'>
                     <a :href="p.path ? p.path : p.linkUrl">
                         <img :src="p.imgUrl" alt="">
                     </a>
@@ -457,7 +457,7 @@
                 </div>
             </div>
             <!-- 到顶部 -->
-            <a href='#top' class="switchTop">
+            <a href='#top' class="switchTop" ref="switchTop">
                 <img src="http://touch.m.dangdang.com/images/go-top.png" alt="">
             </a>
             <!-- end111111111111111111111111111111111111111end -->
@@ -491,6 +491,16 @@
             }
         },
         async mounted() {
+            window.addEventListener("scroll",() => {
+                let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+                if(scrollTop >= 1000){
+                    this.$refs.switchTop.style.display = "block"
+                } else {
+                    this.$refs.switchTop.style.display = "none"
+                }
+            })
+
+
             let result = await reqSecKilled()
             if (result.code === 0) {
                 this.seckilledDatas = result.data.productsInfo
@@ -517,18 +527,12 @@
             })
         },
         methods: {
-            handleClick(index) {
-                //判断index的值
-                if (index == 5) {
-                    this.$router.push('/clothing')
-                }
-
-            },
             isClose() {
                 this.$refs.beClosedAdver.remove()
             },
             isShowSearch() {
                 this.sectionSearch = !this.sectionSearch
+                this.$store.commit("setSectionSearch",this.sectionSearch)
             }
         }
     }
@@ -1628,6 +1632,7 @@
                     height 100%
 
         .switchTop
+            display none
             width 40px
             height 40px
             position fixed
