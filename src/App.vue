@@ -1,8 +1,6 @@
 <template>
   <div id = "app">
-      <keep-alive>
-          <router-view/>
-      </keep-alive>
+      <router-view/>
     <FooterGuide v-show="$route.meta.isShowFooter && !$store.state.sectionSearch"/>
   </div>
 </template>

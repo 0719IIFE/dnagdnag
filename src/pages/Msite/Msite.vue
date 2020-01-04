@@ -26,7 +26,7 @@
                     <input class='searchContent' type='text' placeholder='儿童情绪管理'/>
                 </div>
             </div>
-            <div class='iconMenu' @click="$router.push('/category')">
+            <div class='iconMenu'>
                 <i class='iconfont'>搜索</i>
             </div>
             </div>
