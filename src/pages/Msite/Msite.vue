@@ -87,7 +87,7 @@
       <!-- 十个商品列表 -->
       <ul class="shopList">
         <li class="shopItem" @click="handleClick(index)" v-for="(p,index) in picture.swiper_list" :key = 'index'>
-          <img :src="p" alt="">
+          <img :src="p.imgUrl" alt="">
         </li>
       </ul>
       <!-- 中间的1px的分割线 -->
@@ -492,8 +492,10 @@ export default {
         this.seckilledDatas = result.data.productsInfo
       }
       this.datas = await reqHome()
+      
       this.picture = await reqPicture()
       console.log(this.picture)
+      
       this.redBagRain = await reqRedBagRain()
 
       this.$nextTick(() => {
