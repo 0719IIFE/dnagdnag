@@ -129,7 +129,7 @@ import PagesHeader from '../../components/pagesHeader/pagesHeader'
           }
     },
     computed: {
-      ...mapState(["count","countH","detail"])
+      ...mapState(["count","detail"])
     },
   }
 </script>
