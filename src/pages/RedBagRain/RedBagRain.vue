@@ -3,7 +3,7 @@
         <div class= 'header'> 
             <i class = 'iconfont icon-houtui' @click = "$router.back('/msite')"></i>
             <span class = 'text'>红包雨召唤</span>
-            <i class = 'iconfont icon-sandian' @click = "isShowFooter"></i>
+            <div class = 'openSwitch' :class="{on : showFooter}" @click = "isShowFooter"></div>
         </div>
         <transition name = 'fade' mode = 'in-out'>
             <div class="footer_guide" v-show = 'showFooter'>
@@ -94,17 +94,26 @@ export default {
             font-size 30px
             margin-left 10px
         .text
+            display inline-block
             width 280px
             height 100%
             font-size 21px
             line-height 53px
             text-align center
-        .icon-sandian
+        .openSwitch
             width 48px
             height 100%
-            line-height 53px
-            text-align center
-            font-size 17px
+            background-image url("http://touch.m.dangdang.com/coreimages/menu.png")
+            background-repeat no-repeat
+            background-position center center
+            background-size 27px 
+            &.on
+                width 48px
+                height 100%
+                background-image url("http://touch.m.dangdang.com/coreimages/menu-active.png")
+                background-repeat no-repeat
+                background-position center center
+                background-size 27px
     .fade-enter-active, .fade-leave-active 
         transition all .5s
     .fade-enter, .fade-leave-to

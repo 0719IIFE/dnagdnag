@@ -23,7 +23,10 @@ export default [
     },
     {
         path:'/clothing',
-        component:Clothing
+        component:Clothing,
+        meta:{
+            isShowFooter:true
+        }
     },
     {
         path:'/category',

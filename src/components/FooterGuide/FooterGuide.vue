@@ -6,7 +6,7 @@
       </span>
       <span>首页</span>
     </span>
-    <span class="guide_item" @click="goto('/category')">
+    <span class="guide_item" :class="{on: '/category'===$route.path}" @click="goto('/category')">
       <span>
         <i class="iconfont icon-mulu"></i>
       </span>

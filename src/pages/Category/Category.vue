@@ -343,7 +343,6 @@ export default {
         padding-left 5px
     .footer_guide
       border-top 1px solid #eee
-      z-index -1
       display flex
       position absolute
       top 45px
@@ -375,6 +374,7 @@ export default {
     background-color #eff4fa
     border-top 1px solid #eee
     transition all 0.5s
+    z-index 99
     .bookTitle 
       padding 7px 0 0 14px
       font-size 13px
@@ -385,7 +385,7 @@ export default {
       float left
       .allCategoryObj 
         width 80px
-        height 1457px
+        height 1410px
         background-color #eff4fa
         li 
           width 100%
@@ -503,8 +503,6 @@ export default {
                 width 33.3333%
                 height 44px
                 text-align center
-                //overflow hidden
-                //line-height 30px
                 vertical-align middle
                 border-bottom 1px solid #eee
                 display flex
