@@ -57,7 +57,6 @@ import { reqRight } from '../../api'
 <style stylus lang="stylus" rel="stylesheet/stylus">
   #picture
     width 380px
-
     display flex
     flex-wrap wrap
     .left 

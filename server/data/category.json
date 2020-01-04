@@ -41,19 +41,19 @@
                             "detail": [
                                 {
                                     "title": "总榜",
-                                    "link_url": "http://touch.m.dangdang.com/tushu_bang.php?cat_path=01.00.00.00.00.00&bang_name=bestsell&bang_name_text=图书畅销榜&cat_path_text=总榜&time_region_text=近7天&time_region=recent7",
+                                    "link_url": "/library",
                                     "icon": "http://img62.ddimg.cn/upload_img/00779/xmj/zong-1574317432.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "新书榜",
-                                    "link_url": "http://touch.m.dangdang.com/tushu_bang.php?cat_path=01.00.00.00.00.00&bang_name=newhotsell&bang_name_text=新书热卖榜&cat_path_text=总榜&time_region_text=近7天&time_region=recent7",
+                                    "link_url": "/library",
                                     "icon": "http://img62.ddimg.cn/upload_img/00779/xmj/new-1577170966.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "童书榜",
-                                    "link_url": "http://touch.m.dangdang.com/tongshu_bang.php?cat_path=01.41.00.00.00.00&bang_name=tongshu&bang_name_text=童书畅销榜&cat_path_text=总榜&time_region_text=近7天&time_region=recent7",
+                                    "link_url": "/library",
                                     "icon": "http://img62.ddimg.cn/upload_img/00779/xmj/kid-1565680692.png",
                                     "hot": "-1"
                                 }
@@ -66,138 +66,138 @@
                             "group_name": "小说",
                             "group_link_url": "http://z.dangdang.com/guan/index?page_id=805895",
                             "more": "畅销榜",
-                            "more_link_url": "http://touch.m.dangdang.com/tushu_bang.php?cat_path=01.03.00.00.00.00&bang_name=bestsell&bang_name_text=图书畅销榜&cat_path_text=小说&time_region_text=近7天&time_region=recent7",
+                            "more_link_url": "/library",
                             "style_type": "1",
                             "detail": [
                                 {
                                     "title": "社会",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.03.45.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "侦探/悬疑/推理",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.03.38.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "1"
                                 },
                                 {
                                     "title": "情感",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.03.44.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "世界名著",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.03.56.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "历史",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.03.51.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "科幻",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.03.41.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "魔幻",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.03.40.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "惊悚/恐怖",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.03.39.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "武侠",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.03.42.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "官场",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.03.50.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "军事",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.03.43.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "都市",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.03.46.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "乡土",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.03.47.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "职场",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.03.48.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "财经",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.03.49.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "影视小说",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.03.52.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "四大名著",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.03.33.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "中国古典小说",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.03.32.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "中国近现代小说",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.03.31.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "中国当代小说",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.03.30.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "外国小说",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.03.35.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "作品集",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.03.55.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 }
@@ -205,86 +205,86 @@
                         },
                         {
                             "group_name": "文学",
-                            "group_link_url": "http://search.m.dangdang.com/category.php?cid=01.05.00.00.00.00",
+                            "group_link_url": "/library",
                             "more": "畅销榜",
-                            "more_link_url": "http://touch.m.dangdang.com/tushu_bang.php?cat_path=01.05.00.00.00.00&bang_name=bestsell&bang_name_text=图书畅销榜&cat_path_text=文学&time_region_text=近7天&time_region=recent7",
+                            "more_link_url": "/library",
                             "style_type": "1",
                             "detail": [
                                 {
                                     "title": "中国现当代随笔",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.05.16.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "名家作品",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.05.91.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "文集",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.05.06.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "纪实文学",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.05.07.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "中国古诗词",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.05.12.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "中国现当代诗歌",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.05.13.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "外国诗歌",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.05.14.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "中国古代随笔",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.05.15.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "外国随笔",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.05.17.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "民间文学",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.05.19.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "戏剧",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.05.18.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "文学评论与鉴赏",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.05.92.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "文学理论",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.05.11.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 }
@@ -292,74 +292,74 @@
                         },
                         {
                             "group_name": "青春文学",
-                            "group_link_url": "http://search.m.dangdang.com/category.php?cid=01.01.00.00.00.00",
+                            "group_link_url": "/library",
                             "more": "畅销榜",
-                            "more_link_url": "http://touch.m.dangdang.com/tushu_bang.php?cat_path=01.01.00.00.00.00&bang_name=bestsell&bang_name_text=图书畅销榜&cat_path_text=青春文学&time_region_text=近7天&time_region=recent7",
+                            "more_link_url": "/library",
                             "style_type": "1",
                             "detail": [
                                 {
                                     "title": "爱情/情感",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.01.02.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "1"
                                 },
                                 {
                                     "title": "玄幻/新武侠/魔幻/科幻",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.01.07.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "古代言情",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.01.14.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "穿越/重生/架空",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.01.11.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "校园",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.01.01.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "影视写真",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.01.13.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "叛逆/成长",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.01.03.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "娱乐/偶像",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.01.05.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "悬疑/惊悚",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.01.04.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "爆笑/无厘头",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.01.06.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "轻小说",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.01.15.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 }
@@ -367,80 +367,80 @@
                         },
                         {
                             "group_name": "动漫/幽默",
-                            "group_link_url": "http://search.m.dangdang.com/category.php?cid=01.09.00.00.00.00",
+                            "group_link_url": "/library",
                             "more": "畅销榜",
-                            "more_link_url": "http://touch.m.dangdang.com/tushu_bang.php?cat_path=01.09.00.00.00.00&bang_name=bestsell&bang_name_text=图书畅销榜&cat_path_text=动漫/幽默&time_region_text=近7天&time_region=recent7",
+                            "more_link_url": "/library",
                             "style_type": "1",
                             "detail": [
                                 {
                                     "title": "大陆漫画",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.09.01.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "欧美漫画",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.09.06.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "港台漫画",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.09.02.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "日韩漫画",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.09.03.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "幽默/笑话集",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.09.20.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "画集",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.09.26.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "动漫学堂",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.09.15.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "世界经典漫画集",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.09.10.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "小说/名著漫画版",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.09.12.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "游戏同人作品",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.09.24.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "动漫同人作品",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.09.28.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "其他国外漫画",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.09.09.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 }
@@ -448,128 +448,128 @@
                         },
                         {
                             "group_name": "成功/励志",
-                            "group_link_url": "http://z.dangdang.com/guan/index?page_id=793531",
+                            "group_link_url": "/library",
                             "more": "畅销榜",
-                            "more_link_url": "http://touch.m.dangdang.com/tushu_bang.php?cat_path=01.21.00.00.00.00&bang_name=bestsell&bang_name_text=图书畅销榜&cat_path_text=成功/励志&time_region_text=近7天&time_region=recent7",
+                            "more_link_url": "/library",
                             "style_type": "1",
                             "detail": [
                                 {
                                     "title": "成功/激励",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.21.02.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "人生哲学",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.21.01.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "心灵与修养",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.21.03.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "1"
                                 },
                                 {
                                     "title": "口才/演讲/辩论",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.21.12.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "智商/智谋",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.21.05.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "女性励志",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.21.18.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "男性励志",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.21.17.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "青少年励志",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.21.13.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "人际交往",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.21.09.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "人在职场",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.21.08.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "情商/情绪管理",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.21.06.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "性格与习惯",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.21.04.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "励志小品",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.21.16.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "励志经典著作",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.21.20.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "财商/财富智慧",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.21.07.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "处世学",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.21.10.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "礼仪",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.21.11.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "出国/留学",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.21.14.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "名人励志",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.21.19.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "名言/格言",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.21.15.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 }
@@ -577,176 +577,176 @@
                         },
                         {
                             "group_name": "传记",
-                            "group_link_url": "http://search.m.dangdang.com/category.php?cid=01.38.00.00.00.00",
+                            "group_link_url": "/library",
                             "more": "畅销榜",
-                            "more_link_url": "http://touch.m.dangdang.com/tushu_bang.php?cat_path=01.38.00.00.00.00&bang_name=bestsell&bang_name_text=图书畅销榜&cat_path_text=传记&time_region_text=近7天&time_region=recent7",
+                            "more_link_url": "/library",
                             "style_type": "1",
                             "detail": [
                                 {
                                     "title": "文学家",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.38.14.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "政治人物",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.38.05.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "女性人物",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.38.07.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "财经人物",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.38.01.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "历史人物",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.38.06.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "影视明星",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.38.18.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "领袖首脑",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.38.03.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "艺术家",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.38.15.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "科学家",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.38.16.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "体育明星",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.38.19.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "法律人物",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.38.08.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "历代帝王",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.38.02.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "自传",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.38.25.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "人物合集",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.38.21.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "画传",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.38.26.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "人文/社会学家",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.38.11.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "学者",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.38.27.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "国学大师",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.38.17.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "军事人物",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.38.04.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "宗教人物",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.38.09.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "哲学家",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.38.10.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "教育家",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.38.12.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "语言文字学家",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.38.13.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "建筑设计师",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.38.91.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "家族研究/谱系",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.38.23.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "年谱",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.38.24.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "传记的研究与编写",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.38.22.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "其他",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.38.28.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 }
@@ -754,110 +754,108 @@
                         },
                         {
                             "group_name": "艺术",
-                            "group_link_url": "http://search.m.dangdang.com/category.php?cid=01.07.00.00.00.00",
                             "more": "畅销榜",
-                            "more_link_url": "http://touch.m.dangdang.com/tushu_bang.php?cat_path=01.07.00.00.00.00&bang_name=bestsell&bang_name_text=图书畅销榜&cat_path_text=艺术&time_region_text=近7天&time_region=recent7",
                             "style_type": "1",
                             "detail": [
                                 {
                                     "title": "绘画",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.07.07.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "书法/篆刻",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.07.09.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "音乐",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.07.21.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "摄影",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.07.05.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "设计",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.07.30.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "收藏/鉴赏",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.07.40.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "艺术理论",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.07.01.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "小人书/连环画",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.07.41.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "影视/媒体艺术",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.07.11.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "世界各国艺术概况",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.07.03.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "人体艺术",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.07.31.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "工艺美术",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.07.32.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "戏剧艺术/舞台艺术",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.07.13.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "民间艺术",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.07.36.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "建筑艺术",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.07.37.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "舞蹈",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.07.23.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "雕塑",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.07.28.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 }
@@ -865,128 +863,128 @@
                         },
                         {
                             "group_name": "童书",
-                            "group_link_url": "http://search.m.dangdang.com/category.php?cid=01.41.00.00.00.00",
+                            "group_link_url": "/library",
                             "more": "畅销榜",
-                            "more_link_url": "http://touch.m.dangdang.com/tushu_bang.php?cat_path=01.41.00.00.00.00&bang_name=bestsell&bang_name_text=图书畅销榜&cat_path_text=童书&time_region_text=近7天&time_region=recent7",
+                            "more_link_url": "/library",
                             "style_type": "1",
                             "detail": [
                                 {
                                     "title": "0-2岁",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.01.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "3-6岁",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.02.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "1"
                                 },
                                 {
                                     "title": "7-10岁",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.03.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "11-14岁",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.04.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "科普/百科",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.05.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "外国儿童文学",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.27.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "中国儿童文学",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.26.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "绘本",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.70.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "玩具书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.48.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "婴儿读物",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.44.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "少儿英语",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.51.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "励志/成长",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.55.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "动漫/卡通",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.50.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "幼儿启蒙",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.45.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "进口儿童书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.57.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "益智游戏",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.46.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "少儿期刊",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.69.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "阅读工具书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.59.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "少儿影视",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.67.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "少儿音乐",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.65.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 }
@@ -994,194 +992,194 @@
                         },
                         {
                             "group_name": "中小学教辅",
-                            "group_link_url": "http://z.dangdang.com/guan/index?page_id=793317",
+                            "group_link_url": "/library",
                             "more": "畅销榜",
-                            "more_link_url": "http://touch.m.dangdang.com/tushu_bang.php?cat_path=01.43.00.00.00.00&bang_name=bestsell&bang_name_text=图书畅销榜&cat_path_text=中小学教辅&time_region_text=近7天&time_region=recent7",
+                            "more_link_url": "/library",
                             "style_type": "1",
                             "detail": [
                                 {
                                     "title": "中小学阅读",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.43.70.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "1"
                                 },
                                 {
                                     "title": "工具书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.43.72.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "语文作文",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.43.73.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "小学一年级",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.43.12.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "小学二年级",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.43.13.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "小学三年级",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.43.14.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "小学四年级",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.43.15.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "小学五年级",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.43.16.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "小学六年级",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.43.17.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "小学通用",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.43.18.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "小学升初中",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.43.30.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "七年级",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.43.19.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "八年级",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.43.20.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "九年级/初三",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.43.21.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "初中通用",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.43.22.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "中考",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.43.31.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "高中一年级",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.43.23.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "高中二年级",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.43.24.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "高中三年级",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.43.25.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "高中通用",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.43.26.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "高考",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.43.32.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "竞赛/奥赛",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.43.50.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "写字/字帖",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.43.74.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "1"
                                 },
                                 {
                                     "title": "学习方法",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.43.53.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "幼小衔接",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.43.76.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "教师用书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.43.54.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "英语专项",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.43.71.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "出国留学",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.43.55.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "教辅音像",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.43.60.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "黑板报/手抄报",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.43.69.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "中小学课本",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.43.75.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 }
@@ -1192,212 +1190,212 @@
                             "detail": [
                                 {
                                     "title": "考研",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.47.93.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "1"
                                 },
                                 {
                                     "title": "公务员考试",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.47.11.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "司法考试",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.47.91.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "计算机考试",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.47.03.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "财税外贸保险类考试",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.47.04.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "建筑工程类职称考试",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.47.05.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "医药卫生类职称考试",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.47.06.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "艺术/体育类水平考试",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.47.08.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "自学考试",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.47.94.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "成人高考",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.47.95.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "其他公职类考试",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.47.12.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "1"
                                 },
                                 {
                                     "title": "其他类考试",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.47.07.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 }
                             ],
                             "group_name": "考试",
-                            "group_link_url": "http://search.m.dangdang.com/category.php?cid=01.47.00.00.00.00",
+                            "group_link_url": "/library",
                             "more": "畅销榜",
-                            "more_link_url": "http://touch.m.dangdang.com/tushu_bang.php?cat_path=01.47.00.00.00.00&bang_name=bestsell&bang_name_text=图书畅销榜&cat_path_text=考试&time_region_text=近7天&time_region=recent7"
+                            "more_link_url": "/library"
                         },
                         {
                             "group_name": "外语",
-                            "group_link_url": "http://search.m.dangdang.com/category.php?cid=01.45.00.00.00.00",
+                            "group_link_url": "/library",
                             "more": "畅销榜",
-                            "more_link_url": "http://touch.m.dangdang.com/tushu_bang.php?cat_path=01.45.00.00.00.00&bang_name=bestsell&bang_name_text=图书畅销榜&cat_path_text=外语&time_region_text=近7天&time_region=recent7",
+                            "more_link_url": "/library",
                             "style_type": "1",
                             "detail": [
                                 {
                                     "title": "英语考试",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.45.55.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "英语读物",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.45.62.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "1"
                                 },
                                 {
                                     "title": "英语综合教程",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.45.57.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "英语工具书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.45.63.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "日语",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.45.70.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "韩语",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.45.73.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "法语",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.45.71.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "德语",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.45.72.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "西班牙语",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.45.74.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "俄罗斯语",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.45.76.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "意大利语",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.45.75.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "英语专项训练",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.45.56.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "口语/生活实用英语",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.45.60.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "1"
                                 },
                                 {
                                     "title": "对外汉语",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.45.82.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "行业英语",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.45.61.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "少儿英语",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.45.86.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "FOR 老外",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.45.83.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "中小学英语课外学习",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.45.85.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "英语学术著作",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.45.84.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "外语音像",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.45.95.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "其他小语种",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.45.81.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 }
@@ -4472,7 +4470,7 @@
                 "content": [
                     {
                         "item_type": 1,
-                        "link_url": "http://z.dangdang.com/guan/index?page_id=793293",
+                        "link_url": "/library",
                         "promo_title": "进入童书馆",
                         "promo_text": "精选绘本、儿童科普、儿童文学",
                         "img_url": ""
@@ -4493,37 +4491,37 @@
                             "detail": [
                                 {
                                     "title": "童书畅销榜",
-                                    "link_url": "http://touch.m.dangdang.com/tongshu_bang.php?cat_path=01.41.00.00.00.00&bang_name=tongshu&bang_name_text=童书畅销榜&cat_path_text=总榜&time_region_text=近7天&time_region=recent7",
+                                    "link_url": "/library",
                                     "icon": "http://img61.ddimg.cn/upload_img/00678/zsts/1changxiaobang-1529564612.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "童书新书榜",
-                                    "link_url": "http://touch.m.dangdang.com/tongshu_bang.php?cat_path=01.41.00.00.00.00&bang_name=tongshu_new&bang_name_text=童书新书榜&cat_path_text=总榜&time_region_text=近7天&time_region=recent7",
+                                    "link_url": "/library",
                                     "icon": "http://img63.ddimg.cn/upload_img/00678/zsts/2xinshubang-1529564612.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "0-2岁榜",
-                                    "link_url": "http://touch.m.dangdang.com/tongshu_bang.php?cat_path=01.41.01.00.00.00&bang_name=tongshu&bang_name_text=童书畅销榜&cat_path_text=0-2岁&time_region_text=近7天&time_region=recent7",
+                                    "link_url": "/library",
                                     "icon": "http://img61.ddimg.cn/upload_img/00678/zsts/30-2sbang-1529564612.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "3-6岁榜",
-                                    "link_url": "http://touch.m.dangdang.com/tongshu_bang.php?cat_path=01.41.02.00.00.00&bang_name=tongshu&bang_name_text=童书畅销榜&cat_path_text=3-6岁&time_region_text=近7天&time_region=recent7",
+                                    "link_url": "/library",
                                     "icon": "http://img60.ddimg.cn/upload_img/00678/zsts/43-6sbang-1529564612.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "7-10岁榜",
-                                    "link_url": "http://touch.m.dangdang.com/tongshu_bang.php?cat_path=01.41.03.00.00.00&bang_name=tongshu&bang_name_text=童书畅销榜&cat_path_text=7-10岁&time_region_text=近7天&time_region=recent7",
+                                    "link_url": "/library",
                                     "icon": "http://img63.ddimg.cn/upload_img/00678/zsts/57-10sbang-1529564612.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "11-14岁榜",
-                                    "link_url": "http://touch.m.dangdang.com/tongshu_bang.php?cat_path=01.41.04.00.00.00&bang_name=tongshu&bang_name_text=童书畅销榜&cat_path_text=11-14岁&time_region_text=近7天&time_region=recent7",
+                                    "link_url": "/library",
                                     "icon": "http://img63.ddimg.cn/upload_img/00678/zsts/611-14sbang-1529564612.png",
                                     "hot": "-1"
                                 }
@@ -4537,114 +4535,114 @@
                             "detail": [
                                 {
                                     "title": "跟着绘本学数学",
-                                    "link_url": "http://touch.m.dangdang.com/topics.php?page_id=mix_20180822_ci3h",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "凯迪克奖作品合集",
-                                    "link_url": "http://touch.m.dangdang.com/topics.php?page_id=mix_20170911_aq41",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "让孩子学会躲避危险 儿童安全教育看这里",
-                                    "link_url": "http://touch.m.dangdang.com/topics.php?page_id=mix_20170824_n3hu",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 }
                             ],
                             "more": "更多精彩书单",
-                            "more_link_url": "http://touch.m.dangdang.com/topics.php?page_id=mix_181022readinglist"
+                            "more_link_url": "/library"
                         },
                         {
                             "group_name": "按内容分类",
                             "group_link_url": "",
                             "more": "童书馆",
-                            "more_link_url": "http://z.dangdang.com/guan/index?page_id=793293",
+                            "more_link_url": "/library",
                             "style_type": "1",
                             "detail": [
                                 {
                                     "title": "中国儿童文学",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.26.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "外国儿童文学",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.27.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "绘本",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.70.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "科普/百科",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.05.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "婴儿读物",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.44.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "幼儿启蒙",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.45.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "益智游戏",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.46.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "玩具书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.48.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "动漫/卡通",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.50.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "少儿英语",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.51.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "进口儿童书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.57.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "励志成长",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.55.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "阅读工具书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.59.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "少儿期刊",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.69.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 }
@@ -4654,48 +4652,48 @@
                             "group_name": "0-2岁",
                             "group_link_url": "",
                             "more": "0-2岁馆",
-                            "more_link_url": "http://z.dangdang.com/guan/index?page_id=793323",
+                            "more_link_url": "/library",
                             "style_type": "1",
                             "detail": [
                                 {
                                     "title": "图画故事",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.01.16.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "认知",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.01.11.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "益智游戏",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.01.13.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "纸板书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.01.21.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "艺术课堂",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.01.14.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "童谣",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.01.15.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "入园准备",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.01.19.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 }
@@ -4705,54 +4703,54 @@
                             "group_name": "3-6岁",
                             "group_link_url": "",
                             "more": "3-6岁馆",
-                            "more_link_url": "http://z.dangdang.com/guan/index?page_id=805888",
+                            "more_link_url": "/library",
                             "style_type": "1",
                             "detail": [
                                 {
                                     "title": "绘本",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.02.19.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "科普百科",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.02.20.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "少儿英语",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.02.22.00.00",
+                                    "link_url": "v",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "益智游戏",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.02.13.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "入学准备",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.02.21.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "玩具书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.02.12.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "艺术课堂",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.02.17.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "认知",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.02.11.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 }
@@ -4762,66 +4760,66 @@
                             "group_name": "7-10岁",
                             "group_link_url": "",
                             "more": "7-10岁馆",
-                            "more_link_url": "http://z.dangdang.com/guan/index?page_id=806203",
+                            "more_link_url": "/library",
                             "style_type": "1",
                             "detail": [
                                 {
                                     "title": "文学",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.03.11.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "科普百科",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.03.19.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "卡通动漫",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.03.17.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "童话",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.03.06.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "少儿英语",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.03.22.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "励志成长",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.03.21.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "益智游戏",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.03.05.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "艺术课堂",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.03.13.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "玩具书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.03.04.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "游戏/手工",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.41.03.15.00.00",
+                                    "link_url": "/library",
                                     "icon": "-1",
                                     "hot": "-1"
                                 }
@@ -4909,14 +4907,14 @@
                 "content": [
                     {
                         "item_type": 1,
-                        "link_url": "http://touch.m.dangdang.com/topics.php?page_id=mix_20190731_hq05",
+                        "link_url": "/library",
                         "promo_title": "二手旧书馆",
                         "promo_text": "甄选低价好书",
                         "img_url": ""
                     },
                     {
                         "item_type": 1,
-                        "link_url": "http://touch.m.dangdang.com/topics.php?page_id=168291",
+                        "link_url": "/library",
                         "promo_title": "当当拍卖馆",
                         "promo_text": "艺术臻品1元起拍",
                         "img_url": ""
@@ -4932,278 +4930,278 @@
                     "group": [
                         {
                             "group_name": "二手书",
-                            "group_link_url": "http://search.m.dangdang.com/category.php?cid=01.77.00.00.00.00",
+                            "group_link_url": "/library",
                             "more": "",
                             "more_link_url": "",
                             "style_type": "2",
                             "detail": [
                                 {
                                     "title": "社会科学二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.21.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img61.ddimg.cn/upload_img/00609/mao/1-1546493836.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "文学二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.12.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img60.ddimg.cn/upload_img/00609/mao/2-1546493927.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "文化二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.13.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img63.ddimg.cn/upload_img/00609/mao/3-1546493951.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "教材二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.32.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img62.ddimg.cn/upload_img/00609/mao/4-1546493972.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "小说二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.11.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img62.ddimg.cn/upload_img/00609/mao/5-1546493988.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "艺术二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.07.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img62.ddimg.cn/upload_img/00609/mao/6-1546494002.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "历史二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.28.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img63.ddimg.cn/upload_img/00609/mao/7-1546494035.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "自然科学二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.01.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img63.ddimg.cn/upload_img/00609/mao/8-1546494054.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "经济二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.31.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img62.ddimg.cn/upload_img/00609/mao/9-1546494071.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "医学二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.08.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img62.ddimg.cn/upload_img/00609/mao/10-1546494093.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "法律二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.41.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img62.ddimg.cn/upload_img/00609/mao/11-1546494114.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "工业技术二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.38.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img61.ddimg.cn/upload_img/00609/mao/12-1546494129.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "哲学/宗教二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.04.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img63.ddimg.cn/upload_img/00609/mao/13-1546494147.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "管理二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.36.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img62.ddimg.cn/upload_img/00609/mao/14-1546494166.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "童书二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.17.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img62.ddimg.cn/upload_img/00609/mao/15-1546494187.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "政治/军事二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.03.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img61.ddimg.cn/upload_img/00609/mao/16-1546494210.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "休闲/爱好二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.09.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img61.ddimg.cn/upload_img/00609/mao/17-1546494226.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "计算机/网络二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.35.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img62.ddimg.cn/upload_img/00609/mao/18-1546494245.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "外版/港台原版二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.15.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img62.ddimg.cn/upload_img/00609/mao/19-1546494313.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "家庭/家居二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.34.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img62.ddimg.cn/upload_img/00609/mao/20-1546494332.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "传记二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.43.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img62.ddimg.cn/upload_img/00609/mao/21-1546494348.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "中小学教辅二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.02.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img62.ddimg.cn/upload_img/00609/mao/22-1546494365.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "外语二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.14.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img63.ddimg.cn/upload_img/00609/mao/23-1546494393.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "古籍二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.37.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img60.ddimg.cn/upload_img/00609/mao/24-1546494411.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "成功/励志二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.44.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img63.ddimg.cn/upload_img/00609/mao/25-1546494430.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "体育/运动二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.18.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img62.ddimg.cn/upload_img/00609/mao/26-1546494448.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "心理学二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.10.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img62.ddimg.cn/upload_img/00609/mao/27-1546494472.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "旅游/地图二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.26.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img60.ddimg.cn/upload_img/00609/mao/28-1546494493.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "亲子/家教二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.23.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img62.ddimg.cn/upload_img/00609/mao/29-1546494509.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "投资理财二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.16.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img61.ddimg.cn/upload_img/00609/mao/30-1546494525.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "考试二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.30.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img61.ddimg.cn/upload_img/00609/mao/31-1546494542.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "保健/养生二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.45.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img60.ddimg.cn/upload_img/00609/mao/32-1546494568.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "动漫/幽默二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.42.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img62.ddimg.cn/upload_img/00609/mao/33-1546494587.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "育儿/早教二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.06.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img63.ddimg.cn/upload_img/00609/mao/34-1546494605.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "科普读物二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.29.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img60.ddimg.cn/upload_img/00609/mao/35-1546494625.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "农业/林业二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.25.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img61.ddimg.cn/upload_img/00609/mao/36-1546494642.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "青春文学二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.22.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img63.ddimg.cn/upload_img/00609/mao/37-1546494659.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "建筑二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.33.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img61.ddimg.cn/upload_img/00609/mao/38-1546494681.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "两性关系二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.27.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img62.ddimg.cn/upload_img/00609/mao/39-1546494698.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "孕产/胎教二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.05.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img62.ddimg.cn/upload_img/00609/mao/40-1546494715.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "风水/占卜二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.40.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img62.ddimg.cn/upload_img/00609/mao/41-1546494733.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "烹饪/美食二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.24.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img63.ddimg.cn/upload_img/00609/mao/42-1546494748.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "工具书二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.39.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img62.ddimg.cn/upload_img/00609/mao/43-1546494764.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "时尚/美妆二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.20.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img62.ddimg.cn/upload_img/00609/mao/44-1546494779.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "手工/DIY二手书",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=01.77.19.00.00.00",
+                                    "link_url": "/library",
                                     "icon": "http://img63.ddimg.cn/upload_img/00609/mao/45-1546494796.png",
                                     "hot": "-1"
                                 }
@@ -5228,7 +5226,7 @@
                 "content": [
                     {
                         "item_type": 1,
-                        "link_url": "http://touch.m.dangdang.com/topics.php?page_id=153699",
+                        "link_url": "/sweater",
                         "promo_title": "进入女装馆",
                         "promo_text": "连衣裙\\T恤 1折起",
                         "img_url": ""
@@ -5249,13 +5247,13 @@
                             "detail": [
                                 {
                                     "title": "毛衣",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4008153&att=1000016:41",
+                                    "link_url": "/sweater",
                                     "icon": "http://img58.ddimg.cn/4890034408938_y.jpg",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "毛呢",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4011012",
+                                    "link_url": "/sweater",
                                     "icon": "http://img55.ddimg.cn/4890034408925_y.jpg",
                                     "hot": "-1"
                                 }
@@ -5270,73 +5268,73 @@
                             "detail": [
                                 {
                                     "title": "毛衣",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4008153&att=1000016:41",
+                                    "link_url": "/sweater",
                                     "icon": "http://img58.ddimg.cn/4890034408938_y.jpg",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "羊绒衫",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4008146",
+                                    "link_url": "/sweater",
                                     "icon": "http://img50.ddimg.cn/4890034408940_y.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "羊毛衫",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4008153&att=1000025:19",
+                                    "link_url": "/sweater",
                                     "icon": "http://img59.ddimg.cn/4890034408939_y.jpg",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "长袖T恤",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4008150&att=1000016:174",
+                                    "link_url": "/sweater",
                                     "icon": "http://img53.ddimg.cn/4890034408893_y.jpg",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "打底衫",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4008153",
+                                    "link_url": "/sweater",
                                     "icon": "http://img57.ddimg.cn/4890034408937_y.jpg",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "长袖衬衫",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4008151",
+                                    "link_url": "/sweater",
                                     "icon": "http://img53.ddimg.cn/116550032980613_y.jpg",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "格子衫",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4008151&att=1000184:2",
+                                    "link_url": "/sweater",
                                     "icon": "http://img55.ddimg.cn/4890034408895_y.jpg",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "短袖T恤",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4008150",
+                                    "link_url": "/sweater",
                                     "icon": "http://img52.ddimg.cn/116550032980602_y.jpg",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "短袖衬衫",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4008151&att=1000157:4",
+                                    "link_url": "/sweater",
                                     "icon": "http://img54.ddimg.cn/4890034408894_y.jpg",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "雪纺衫",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4008151&att=1000025:2",
+                                    "link_url": "/sweater",
                                     "icon": "http://img56.ddimg.cn/4890034408896_y.jpg",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "纯棉T恤",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4008150&att=1000025:33",
+                                    "link_url": "/sweater",
                                     "icon": "http://img50.ddimg.cn/4890034408890_y.jpg",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "圆领T恤",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4008150&att=1000018:7",
+                                    "link_url": "/sweater",
                                     "icon": "http://img52.ddimg.cn/4890034408892_y.jpg",
                                     "hot": "-1"
                                 }
@@ -5346,54 +5344,54 @@
                         },
                         {
                             "group_name": "裤装",
-                            "group_link_url": "http://search.m.dangdang.com/category.php?cid=4008152",
+                            "group_link_url": "/sweater",
                             "style_type": "2",
                             "detail": [
                                 {
                                     "title": "牛仔",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4011008",
+                                    "link_url": "/sweater",
                                     "icon": "http://img55.ddimg.cn/4890034408905_y.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "休闲",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4011009",
+                                    "link_url": "/sweater",
                                     "icon": "http://img52.ddimg.cn/116550032980612_y.jpg",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "打底",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4008152&att=1000016:186",
+                                    "link_url": "/sweater",
                                     "icon": "http://img52.ddimg.cn/4890034408902_y.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "喇叭",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4008152&att=1000205:8",
+                                    "link_url": "/sweater",
                                     "icon": "http://img54.ddimg.cn/4890034408904_y.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "铅笔",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4008152&att=1000205:7",
+                                    "link_url": "/sweater",
                                     "icon": "http://img57.ddimg.cn/4890034408907_y.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "九分裤",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4008152&att=1000131:5",
+                                    "link_url": "/sweater",
                                     "icon": "http://img51.ddimg.cn/4890034408961_y.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "七分裤",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4008152&att=1000131:4",
+                                    "link_url": "/sweater",
                                     "icon": "http://img57.ddimg.cn/116550032980607_y.jpg",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "短裤",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4011010",
+                                    "link_url": "/sweater",
                                     "icon": "http://img53.ddimg.cn/4890034408903_y.jpg",
                                     "hot": "-1"
                                 }
@@ -5403,24 +5401,24 @@
                         },
                         {
                             "group_name": "外套",
-                            "group_link_url": "http://search.m.dangdang.com/category.php?cid=4008154",
+                            "group_link_url": "/sweater",
                             "style_type": "2",
                             "detail": [
                                 {
                                     "title": "毛呢",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4011012",
+                                    "link_url": "/sweater",
                                     "icon": "http://img55.ddimg.cn/4890034408925_y.jpg",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "羽绒服",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4010275",
+                                    "link_url": "/sweater",
                                     "icon": "http://img54.ddimg.cn/4890034408934_y.jpg",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "棉服",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4008154&att=1000016:38",
+                                    "link_url": "/sweater",
                                     "icon": "http://img56.ddimg.cn/4890034408926_y.jpg",
                                     "hot": "1"
                                 },
@@ -6141,7 +6139,7 @@
                 "content": [
                     {
                         "item_type": 1,
-                        "link_url": "http://touch.m.dangdang.com/topics.php?page_id=183490",
+                        "link_url": "/sweater",
                         "promo_title": "进入男装馆",
                         "promo_text": "太平鸟男装 2件2.5折",
                         "img_url": ""
@@ -6162,37 +6160,37 @@
                             "detail": [
                                 {
                                     "title": "羽绒服",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4010279",
+                                    "link_url": "/sweater",
                                     "icon": "http://img62.ddimg.cn/upload_img/00727/123/y-1574664318.jpg",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "棉服",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4010278",
+                                    "link_url": "/sweater",
                                     "icon": "http://img60.ddimg.cn/upload_img/00738/123/160X160-MF-1572925316.jpg",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "毛衫",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4008128",
+                                    "link_url": "/sweater",
                                     "icon": "http://img61.ddimg.cn/upload_img/00727/123/ms-1574664337.jpg",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "卫衣",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4010302",
+                                    "link_url": "/sweater",
                                     "icon": "http://img63.ddimg.cn/upload_img/00727/123/wy-1567756069.jpg",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "休闲裤",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4008122",
+                                    "link_url": "/sweater",
                                     "icon": "http://img63.ddimg.cn/upload_img/00727/123/xxk-1567756111.jpg",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "牛仔裤",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4008121",
+                                    "link_url": "/sweater",
                                     "icon": "http://img60.ddimg.cn/upload_img/00727/123/nzk-1567756099.jpg",
                                     "hot": "-1"
                                 }
@@ -6207,43 +6205,41 @@
                             "detail": [
                                 {
                                     "title": "太平鸟",
-                                    "link_url": "http://shop.m.dangdang.com/22409.html?t=1577451571",
+                                    "link_url": "/sweater",
                                     "icon": "http://img63.ddimg.cn/upload_img/00738/123/tpn-1567584710.jpg",
                                     "hot": "1"
                                 },
                                 {
                                     "title": "森马",
-                                    "link_url": "http://shop.m.dangdang.com/8525.html?t=1577451571",
+                                    "link_url": "/sweater",
                                     "icon": "http://img60.ddimg.cn/upload_img/00738/123/2senma-1526115691.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "韩都衣舍",
-                                    "link_url": "http://shop.m.dangdang.com/21870.html?t=1577451571",
-                                    "icon": "http://img61.ddimg.cn/upload_img/00738/123/hdys-180-1566453268.jpg",
+                                    "link_url": "/sweater",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "美特斯邦威",
-                                    "link_url": "http://shop.m.dangdang.com/13670.html?t=1577451571",
-                                    "icon": "http://img60.ddimg.cn/upload_img/00738/123/3meibang-1526115706.png",
+                                    "link_url": "/sweater",
                                     "hot": "1"
                                 },
                                 {
                                     "title": "唐狮",
-                                    "link_url": "http://shop.m.dangdang.com/5372.html?t=1577451571",
+                                    "link_url": "/sweater",
                                     "icon": "http://img62.ddimg.cn/upload_img/00738/123/ts-180-1566453343.jpg",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "GXG",
-                                    "link_url": "http://shop.m.dangdang.com/21605.html?t=1577451571",
+                                    "link_url": "/sweater",
                                     "icon": "http://img63.ddimg.cn/upload_img/00738/123/6GXG-1531987084.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "海澜之家",
-                                    "link_url": "http://shop.m.dangdang.com/21311.html?t=1577451571",
+                                    "link_url": "/sweater",
                                     "icon": "http://img62.ddimg.cn/upload_img/00738/123/4hailan-1526115720.png",
                                     "hot": "-1"
                                 },
@@ -6337,36 +6333,36 @@
                         },
                         {
                             "more": "时尚男装馆",
-                            "more_link_url": "http://touch.m.dangdang.com/topics.php?page_id=183490",
+                            "more_link_url": "/sweater",
                             "style_type": "2",
                             "detail": [
                                 {
                                     "title": "羽绒服",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4010279",
+                                    "link_url": "/sweater",
                                     "icon": "http://img62.ddimg.cn/upload_img/00738/123/rrf-1574653955.jpg",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "棉服",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4010278",
+                                    "link_url": "/sweater",
                                     "icon": "http://img62.ddimg.cn/upload_img/00727/123/mianfu-1537256404.jpg",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "毛呢大衣",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4010287",
+                                    "link_url": "/sweater",
                                     "icon": "http://img63.ddimg.cn/upload_img/00727/123/maonidayi-1537256462.jpg",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "皮衣",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4010288",
+                                    "link_url": "/sweater",
                                     "icon": "http://img62.ddimg.cn/upload_img/00727/123/pijia-1537256424.jpg",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "夹克",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4010277",
+                                    "link_url": "/sweater",
                                     "icon": "http://img63.ddimg.cn/upload_img/00727/123/jiake-1537256445.jpg",
                                     "hot": "-1"
                                 },
@@ -6606,7 +6602,7 @@
                 "content": [
                     {
                         "item_type": 1,
-                        "link_url": "http://touch.m.dangdang.com/topics.php?page_id=185118",
+                        "link_url": "/sweater",
                         "promo_title": "进入童装童鞋馆",
                         "promo_text": "童装童鞋年货节，限时3件1.5折",
                         "img_url": ""
@@ -6629,43 +6625,43 @@
                             "detail": [
                                 {
                                     "title": "巴拉巴拉",
-                                    "link_url": "http://shop.m.dangdang.com/8603.html?t=1577450895",
+                                    "link_url": "/sweater",
                                     "icon": "http://img54.ddimg.cn/86030023243534_y.jpg",
                                     "hot": "1"
                                 },
                                 {
                                     "title": "安奈儿",
-                                    "link_url": "http://shop.m.dangdang.com/4236.html?t=1577450895",
+                                    "link_url": "/sweater",
                                     "icon": "http://img62.ddimg.cn/upload_img/00601/111/annaierLOGO824-1535081853.jpg",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "暇步士",
-                                    "link_url": "http://shop.m.dangdang.com/20760.html?t=1577450895",
+                                    "link_url": "/sweater",
                                     "icon": "http://img61.ddimg.cn/upload_img/00601/111/xiabushi1033.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "耐克",
-                                    "link_url": "http://shop.m.dangdang.com/10748.html?t=1577450895",
+                                    "link_url": "/sweater",
                                     "icon": "http://img60.ddimg.cn/upload_img/00601/111/naike1033.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "迷你巴拉巴拉",
-                                    "link_url": "http://shop.m.dangdang.com/21286.html?t=1577450895",
+                                    "link_url": "/sweater",
                                     "icon": "http://img61.ddimg.cn/upload_img/00601/123/minibala448-1523184857.png",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "安踏",
-                                    "link_url": "http://shop.m.dangdang.com/22075.html?t=1577450895",
+                                    "link_url": "/sweater",
                                     "icon": "http://img62.ddimg.cn/upload_img/00628/images/anta-1556533748.jpg",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "戴维贝拉",
-                                    "link_url": "http://shop.m.dangdang.com/8155.html?t=1577450895",
+                                    "link_url": "/sweater",
                                     "icon": "http://img63.ddimg.cn/upload_img/00601/123/daiweibeilalogo227-1519718109.png",
                                     "hot": "-1"
                                 },
@@ -6744,31 +6740,31 @@
                             "detail": [
                                 {
                                     "title": "长袖T",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4009360",
+                                    "link_url": "/sweater",
                                     "icon": "http://img62.ddimg.cn/upload_img/00628/dangdang/c-t-1568789883.jpg",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "外套",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4009367",
+                                    "link_url": "/sweater",
                                     "icon": "http://img63.ddimg.cn/upload_img/00628/dangdang/waitao-1568789883.jpg",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "裤子",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4009369",
+                                    "link_url": "/sweater",
                                     "icon": "http://img63.ddimg.cn/upload_img/00628/dangdang/kuzi-1568789883.jpg",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "卫衣",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4009364",
+                                    "link_url": "/sweater",
                                     "icon": "http://img60.ddimg.cn/upload_img/00628/dangdang/weiyi-1568789883.jpg",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "针织衫",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4009365",
+                                    "link_url": "/sweater",
                                     "icon": "http://img63.ddimg.cn/upload_img/00628/dangdang/zhenzhishan-1568789883.jpg",
                                     "hot": "-1"
                                 },
@@ -6843,19 +6839,19 @@
                             "detail": [
                                 {
                                     "title": "运动鞋",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4009377",
+                                    "link_url": "/sweater",
                                     "icon": "http://img63.ddimg.cn/upload_img/00628/images/yundong-1568792612.jpg",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "休闲鞋",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4009378",
+                                    "link_url": "/sweater",
                                     "icon": "http://img60.ddimg.cn/upload_img/00628/images/xiuxian-1568792612.jpg",
                                     "hot": "-1"
                                 },
                                 {
                                     "title": "帆布鞋",
-                                    "link_url": "http://search.m.dangdang.com/category.php?cid=4009379",
+                                    "link_url": "/sweater",
                                     "icon": "http://img63.ddimg.cn/upload_img/00628/images/fanbuxie-1568792612.jpg",
                                     "hot": "-1"
                                 },
