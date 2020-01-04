@@ -19,12 +19,14 @@
         <!-- 滑动bar -->
         <section class="user-basic">
             <router-link tag="div" to="" class="table">
-                <div class="loginContent" v-for="(item,index) in list" :key="index">
-                    <span>{{item}}</span>
+                <div class="wrapper">
+                    <ul class="content">
+                        <li v-for="(item,index) in list" :key="index" @click="handleClick(index)" :class="{active: index === currentIndex}">{{item}}</li>
+                    </ul>
                 </div>
             </router-link>
         </section>
-        <div class="line"></div>
+        <!-- <div class="line"></div> -->
         <!-- 结束 -->
         <div class="down">
       <span class="jiantou" @click="toDown" :class="{toDown:isDown}">
@@ -59,10 +61,10 @@
                     <span class="yuanjia">￥33.33</span>
                 </p>
                 <p>
-                    <span><i class="iconfont icon-star"></i></span>
-                    <span><i class="iconfont icon-star"></i></span>
-                    <span><i class="iconfont icon-star"></i></span>
-                    <span><i class="iconfont icon-star"></i></span>
+                    <span><i class="iconfont icon-icon-"></i></span>
+                    <span><i class="iconfont icon-icon-"></i></span>
+                    <span><i class="iconfont icon-icon-"></i></span>
+                    <span><i class="iconfont icon-icon-"></i></span>
                     <span><i class="iconfont icon-star"></i></span>
                     <span class="pinglun">3823评论</span>
                 </p>
@@ -72,6 +74,7 @@
     </section>
 </template>
 <script>
+    import BScroll from 'better-scroll'
     import {reqLibrary} from '../../api';
 
     export default {
@@ -106,7 +109,8 @@
                     "专记",
                     "专记",
                     "专记"
-                ]
+                ],
+                currentIndex:0
             }
         },
         async mounted() {
@@ -115,10 +119,20 @@
             if (result.errorCode === 0) {
                 this.dataList = result
             }
+
+            this.$nextTick(() => {
+                new BScroll('.wrapper',{
+                scrollX:"true",
+                click:true
+                })
+            })
         },
         methods: {
             toDown() {
                 this.isDown = !this.isDown
+            },
+            handleClick(index){
+                this.currentIndex = index
             }
         }
     }
@@ -144,7 +158,7 @@
 
             .iconfont
                 font-size 16px
-                line-height 44px
+                line-height 44px 
 
             .header_title
                 width 30%
@@ -156,7 +170,6 @@
         .user-basic
             width 100%
             overflow hidden
-            overflow-x: scroll
             height 45px
             background-size cover
             box-sizing border-box
@@ -164,28 +177,32 @@
             border-bottom 1px solid #949494
 
             .table
-                width 100% px
-                height 44px
-
-                .loginContent
-                    display inline-block
+                .wrapper
                     width 100%
-                    height 39px
-                    text-align center
-                    margin-right 12px
+                    overflow hidden
+                    .content
+                        display flex
+                        flex-wrap nowrap
+                        width 600px
+                        height 39px
+                        text-align center
+                        margin-right 12px
+                        li
+                            width 70px
+                            margin-left 20px
+                            font-size 14px
+                            color #555
+                            line-height 39px
+                            &.active
+                                color red
+                                border-bottom 1px solid red
 
-                    span
-                        width 53px
-                        font-size 14px
-                        color #555
-                        line-height 39px
-
-        .line
-            position absolute
-            width 100%
-            height 4px
-            background white
-            top 85px
+        // .line
+        //     position absolute
+        //     width 100%
+        //     height 4px
+        //     background white
+        //     top 85px
 
         .down
             position relative
@@ -303,8 +320,9 @@
                         font-size 11px
                         color #a0a0a0
 
-                    .icon-star
+                    .icon-icon-
                         color red
+                        font-size 19px
 
                     .pinglun
 
