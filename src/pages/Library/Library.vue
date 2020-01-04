@@ -2,7 +2,7 @@
   <section class="bar_name">
     <!-- -->
 
-    <header class="header">
+    <!-- <header class="header">
       <span>
         <i class="iconfont icon-jiantou2"></i>
       </span>
@@ -12,7 +12,10 @@
      <span>
         <i class="iconfont icon-shenglvehao"></i>
       </span>
-    </header>
+    </header> -->
+
+    <AllPagesHeader title="畅销图书榜"/>
+
     <!-- 滑动bar -->
     <section class="user-basic" >
       <router-link tag="div" to="" class="table">

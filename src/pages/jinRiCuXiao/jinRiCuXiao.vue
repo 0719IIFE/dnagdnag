@@ -1,11 +1,13 @@
 <template>
     <div class="container" ref="containerRef" v-if="data" >
         <header>
-            <div class="header-top">
+            <!-- <div class="header-top">
                 <span><i class="iconfont icon-fanhui"></i></span>
                 <div class="topContent">图书5折封顶</div>
                 <span><i class="iconfont icon-more"></i></span>
-            </div>
+            </div> -->
+            <AllPagesHeader title="图书5折封顶"/>
+
             <div class="searchContainer">
                 <div class="inputContainer">
                     <i class="iconfont icon-zelvxuanzefeiyongdaosanjiaoxingfandui"></i>
