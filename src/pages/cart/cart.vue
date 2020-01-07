@@ -122,7 +122,7 @@ import PagesHeader from '../../components/pagesHeader/pagesHeader'
               title: '标题',
               message: '确定删除该商品么？'
             }).then(() => {
-              // on confirm
+             this.$store.commit("updateCartCount",0)
             }).catch(() => {
               // on cancel
             })
