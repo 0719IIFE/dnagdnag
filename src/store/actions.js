@@ -41,6 +41,7 @@ export default {
 		if (state.token && !state.user._id) { // 必须要有token且没有user信息
 			// 发送自动登陆的请求
 			const result = await reqAutoLogin()
+            console.log(result);
 			if (result.code===0) {
 				const user = result.data  // 没有token
 				commit(RECEIVE_USER, {user})

@@ -15,7 +15,7 @@ export default {
       components:{
         FooterGuide
       },
-  async mounted () {
+  mounted () {
       // 通知action异步获取address并保存到state
       this.$store.dispatch('autoLogin')
     },
