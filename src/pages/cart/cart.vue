@@ -37,7 +37,7 @@
         <img src="./images/27950877-1_l_3.jpg" alt="">
         <div class="compile_content_check_count">
           <section >
-            <button v-on:click="subtract(countH)">-</button>
+            <button v-on:click="subtract()">-</button>
             <input type="text" value="0" v-model="count">
             <button v-on:click="add(countH)">+</button>
           </section>
@@ -130,7 +130,7 @@ import PagesHeader from '../../components/pagesHeader/pagesHeader'
           }
     },
     computed: {
-      ...mapState(["count","countH","detail"])
+      ...mapState(["count","detail"])
     },
   }
 </script>

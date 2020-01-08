@@ -100,7 +100,7 @@ export default [
         component:Comment,
     },
     {
-        path:'/library',
+        path:'/library/:id',
         component:Library
     },
     {

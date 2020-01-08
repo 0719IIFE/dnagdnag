@@ -1,18 +1,5 @@
 <template>
     <section class="bar_name">
-        <!-- -->
-
-        <!-- <header class="header">
-          <span>
-            <i class="iconfont icon-jiantou2"></i>
-          </span>
-          <div class="header_title">
-            <span class="header_title_text">畅销图书榜</span>
-          </div>
-         <span>
-            <i class="iconfont icon-shenglvehao"></i>
-          </span>
-        </header> -->
 
         <AllPagesHeader title="畅销图书榜"/>
 
@@ -21,7 +8,7 @@
             <router-link tag="div" to="" class="table">
                 <div class="wrapper">
                     <ul class="content">
-                        <li v-for="(item,index) in list" :key="index" @click="handleClick(index)" :class="{active: index === currentIndex}">{{item}}</li>
+                        <li v-for="(item,index) in list" :key="index" @click="handleClick(index)" :class="{active: index == $route.params.id || currentIndex}">{{item}}</li>
                     </ul>
                 </div>
             </router-link>
@@ -82,8 +69,9 @@
             return {
                 dataList: {},
                 isDown: false,
-                list: ["新书热卖榜",
+                list: [
                     "图书畅销榜",
+                    "新书热卖榜",
                     "童书新书榜",
                     "童书畅销榜",
                     "热搜榜",
