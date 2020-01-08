@@ -61,7 +61,7 @@
                                 <div class="bookListContainer" v-if="item.style_type == 2">
                                     <p class="bookTitle">{{item.group_name || item.pile_name}}</p>
                                     <ul class="booksList">
-                                        <li v-for="(dItem,index) in item.detail" :key="index">
+                                        <li v-for="(dItem,index) in item.detail" :key="index" @click={goto(dItem.link_url)}>
                                             <img :src="dItem.icon"/>
                                             <p>{{dItem.title}}</p>
                                         </li>
@@ -82,8 +82,8 @@
                                             <li class="fold" @click="toggleUnfold(item,true)">
                                                 <p>查看更多</p>
                                                 <span>
-                          <i class="iconfont icon-zhankai"></i>
-                        </span>
+                                                    <i class="iconfont icon-zhankai"></i>
+                                                </span>
                                             </li>
                                         </ul>
                                         <ul class="upList" v-if="item.show">
@@ -91,8 +91,8 @@
                                             <li class="fold" @click="toggleUnfold(item,false)">
                                                 <p>收起</p>
                                                 <span>
-                          <i class="iconfont icon-zhankai"></i>
-                        </span>
+                                                    <i class="iconfont icon-zhankai"></i>
+                                                </span>
                                             </li>
                                         </ul>
                                     </div>
