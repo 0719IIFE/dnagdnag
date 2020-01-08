@@ -40,6 +40,6 @@ export default {
       state.review_list=review
     },
     updateCartCount(state,count){
-      state.count=state.count+count
+      state.count=count
     }
 }
