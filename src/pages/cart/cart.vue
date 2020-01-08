@@ -297,7 +297,7 @@ import PagesHeader from '../../components/pagesHeader/pagesHeader'
             heigth 48px
           input
             //display inline-block
-            width 80px
+            width 60px
             font-size 20px
             text-align  center
             //border 1px solid #EFEFEF
