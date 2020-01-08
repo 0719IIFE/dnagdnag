@@ -61,7 +61,7 @@
                                 <div class="bookListContainer" v-if="item.style_type == 2">
                                     <p class="bookTitle">{{item.group_name || item.pile_name}}</p>
                                     <ul class="booksList">
-                                        <li v-for="(dItem,index) in item.detail" :key="index" @click={goto(dItem.link_url)}>
+                                        <li v-for="(dItem,index) in item.detail" :key="index" @click=goto(dItem.link_url)>
                                             <img :src="dItem.icon"/>
                                             <p>{{dItem.title}}</p>
                                         </li>
@@ -77,7 +77,11 @@
 
                                     <div class="fictionUpContent">
                                         <ul class="upList" v-if="!item.show">
-                                            <li v-for="(i,index) in item.detail" :key="index" v-show="index < 5"><p>
+                                            <li 
+                                                v-for="(i,index) in item.detail" :key="index" 
+                                                v-show="index < 5" 
+                                                @click="goto('/library')"
+                                            ><p>
                                                 {{i.title}}</p></li>
                                             <li class="fold" @click="toggleUnfold(item,true)">
                                                 <p>查看更多</p>
@@ -87,7 +91,7 @@
                                             </li>
                                         </ul>
                                         <ul class="upList" v-if="item.show">
-                                            <li v-for="(i,index) in item.detail" :key="index"><p>{{i.title}}</p></li>
+                                            <li v-for="(i,index) in item.detail" :key="index"  @click="goto('/library')"><p>{{i.title}}</p></li>
                                             <li class="fold" @click="toggleUnfold(item,false)">
                                                 <p>收起</p>
                                                 <span>
